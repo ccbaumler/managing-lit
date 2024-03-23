@@ -1,0 +1,2199 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<script src="prez-keeping-organized_files/libs/clipboard/clipboard.min.js"></script>
+<script src="prez-keeping-organized_files/libs/quarto-html/tabby.min.js"></script>
+<script src="prez-keeping-organized_files/libs/quarto-html/popper.min.js"></script>
+<script src="prez-keeping-organized_files/libs/quarto-html/tippy.umd.min.js"></script>
+<link href="prez-keeping-organized_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="prez-keeping-organized_files/libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="prez-keeping-organized_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
+<link href="prez-keeping-organized_files/libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.4.551">
+
+  <meta name="author" content="Colton Baumler">
+  <meta name="author" content="Bryshal Moore">
+  <title>Putting the Articles in Their Place!</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="prez-keeping-organized_files/libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="prez-keeping-organized_files/libs/revealjs/dist/reveal.css">
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="prez-keeping-organized_files/libs/revealjs/dist/theme/quarto.css">
+  <link rel="stylesheet" href="timer.css">
+  <link href="prez-keeping-organized_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="prez-keeping-organized_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="prez-keeping-organized_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="prez-keeping-organized_files/libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
+  <link href="prez-keeping-organized_files/libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
+  <link href="prez-keeping-organized_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+
+  .callout {
+    margin-top: 1em;
+    margin-bottom: 1em;  
+    border-radius: .25rem;
+  }
+
+  .callout.callout-style-simple { 
+    padding: 0em 0.5em;
+    border-left: solid #acacac .3rem;
+    border-right: solid 1px silver;
+    border-top: solid 1px silver;
+    border-bottom: solid 1px silver;
+    display: flex;
+  }
+
+  .callout.callout-style-default {
+    border-left: solid #acacac .3rem;
+    border-right: solid 1px silver;
+    border-top: solid 1px silver;
+    border-bottom: solid 1px silver;
+  }
+
+  .callout .callout-body-container {
+    flex-grow: 1;
+  }
+
+  .callout.callout-style-simple .callout-body {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  .callout.callout-style-default .callout-body {
+    font-size: 0.9rem;
+    font-weight: 400;
+  }
+
+  .callout.callout-titled.callout-style-simple .callout-body {
+    margin-top: 0.2em;
+  }
+
+  .callout:not(.callout-titled) .callout-body {
+      display: flex;
+  }
+
+  .callout:not(.no-icon).callout-titled.callout-style-simple .callout-content {
+    padding-left: 1.6em;
+  }
+
+  .callout.callout-titled .callout-header {
+    padding-top: 0.2em;
+    margin-bottom: -0.2em;
+  }
+
+  .callout.callout-titled .callout-title  p {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+    
+  .callout.callout-titled.callout-style-simple .callout-content  p {
+    margin-top: 0;
+  }
+
+  .callout.callout-titled.callout-style-default .callout-content  p {
+    margin-top: 0.7em;
+  }
+
+  .callout.callout-style-simple div.callout-title {
+    border-bottom: none;
+    font-size: .9rem;
+    font-weight: 600;
+    opacity: 75%;
+  }
+
+  .callout.callout-style-default  div.callout-title {
+    border-bottom: none;
+    font-weight: 600;
+    opacity: 85%;
+    font-size: 0.9rem;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+
+  .callout.callout-style-default div.callout-content {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+
+  .callout.callout-style-simple .callout-icon::before {
+    height: 1rem;
+    width: 1rem;
+    display: inline-block;
+    content: "";
+    background-repeat: no-repeat;
+    background-size: 1rem 1rem;
+  }
+
+  .callout.callout-style-default .callout-icon::before {
+    height: 0.9rem;
+    width: 0.9rem;
+    display: inline-block;
+    content: "";
+    background-repeat: no-repeat;
+    background-size: 0.9rem 0.9rem;
+  }
+
+  .callout-title {
+    display: flex
+  }
+    
+  .callout-icon::before {
+    margin-top: 1rem;
+    padding-right: .5rem;
+  }
+
+  .callout.no-icon::before {
+    display: none !important;
+  }
+
+  .callout.callout-titled .callout-body > .callout-content > :last-child {
+    padding-bottom: 0.5rem;
+    margin-bottom: 0;
+  }
+
+  .callout.callout-titled .callout-icon::before {
+    margin-top: .5rem;
+    padding-right: .5rem;
+  }
+
+  .callout:not(.callout-titled) .callout-icon::before {
+    margin-top: 1rem;
+    padding-right: .5rem;
+  }
+
+  /* Callout Types */
+
+  div.callout-note {
+    border-left-color: #4582ec !important;
+  }
+
+  div.callout-note .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAAEU0lEQVRYCcVXTWhcVRQ+586kSUMMxkyaElstCto2SIhitS5Ek8xUKV2poatCcVHtUlFQk8mbaaziwpWgglJwVaquitBOfhQXFlqlzSJpFSpIYyXNjBNiTCck7x2/8/LeNDOZxDuEkgOXe++553zfefee+/OYLOXFk3+1LLrRdiO81yNqZ6K9cG0P3MeFaMIQjXssE8Z1JzLO9ls20MBZX7oG8w9GxB0goaPrW5aNMp1yOZIa7Wv6o2ykpLtmAPs/vrG14Z+6d4jpbSKuhdcSyq9wGMPXjonwmESXrriLzFGOdDBLB8Y6MNYBu0dRokSygMA/mrun8MGFN3behm6VVAwg4WR3i6FvYK1T7MHo9BK7ydH+1uurECoouk5MPRyVSBrBHMYwVobG2aOXM07sWrn5qgB60rc6mcwIDJtQrnrEr44kmy+UO9r0u9O5/YbkS9juQckLed3DyW2XV/qWBBB3ptvI8EUY3I9p/67OW+g967TNr3Sotn3IuVlfMLVnsBwH4fsnebJvyGm5GeIUA3jljERmrv49SizPYuq+z7c2H/jlGC+Ghhupn/hcapqmcudB9jwJ/3jvnvu6vu5lVzF1fXyZuZZ7U8nRmVzytvT+H3kilYvH09mLWrQdwFSsFEsxFVs5fK7A0g8gMZjbif4ACpKbjv7gNGaD8bUrlk8x+KRflttr22JEMRUbTUwwDQScyzPgedQHZT0xnx7ujw2jfVfExwYHwOsDTjLdJ2ebmeQIlJ7neo41s/DrsL3kl+W2lWvAga0tR3zueGr6GL78M3ifH0rGXrBC2aAR8uYcIA5gwV8zIE8onoh8u0Fca/ciF7j1uOzEnqcIm59sEXoGc0+z6+H45V1CvAvHcD7THztu669cnp+L0okAeIc6zjbM/24LgGM1gZk7jnRu1aQWoU9sfUOuhrmtaPIO3YY1KLLWZaEO5TKUbMY5zx8W9UJ6elpLwKXbsaZ4EFl7B4bMtDv0iRipKoDQT2sNQI9b1utXFdYisi+wzZ/ri/1m7QfDgEuvgUUEIJPq3DhX/5DWNqIXDOweC2wvIR90Oq3lDpdMIgD2r0dXvGdsEW5H6x6HLRJYU7C69VefO1x8Gde1ZFSJLfWS1jbCnhtOPxmpfv2LXOA2Xk2tvnwKKPFuZ/oRmwBwqRQDcKNeVQkYcOjtWVBuM/JuYw5b6isojIkYxyYAFn5K7ZBF10fea52y8QltAg6jnMqNHFBmGkQ1j+U43HMi2xMar1Nv0zGsf1s8nUsmUtPOOrbFIR8bHFDMB5zL13Gmr/kGlCkUzedTzzmzsaJXhYawnA3UmARpiYj5ooJZiUoxFRtK3X6pgNPv+IZVPcnwbOl6f+aBaO1CNvPW9n9LmCp01nuSaTRF2YxHqZ8DYQT6WsXT+RD6eUztwYLZ8rM+rcPxamv1VQzFUkzFXvkiVrySGQgJNvXHJAxiU3/NwiC03rSf05VBaPtu/Z7/B8Yn/w7eguloAAAAAElFTkSuQmCC');
+  }
+
+  div.callout-note.callout-style-default .callout-title {
+    background-color: #dae6fb
+  }
+
+  div.callout-important {
+    border-left-color: #d9534f !important;
+  }
+
+  div.callout-important .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAAEKklEQVRYCcVXTWhcVRS+575MJym48A+hSRFr00ySRQhURRfd2HYjk2SSTokuBCkU2o0LoSKKraKIBTcuFCoidGFD08nkBzdREbpQ1EDNIv8qSGMFUboImMSZd4/f9zJv8ibJMC8xJQfO3HPPPef7zrvvvnvviIkpC9nsw0UttFunbUhpFzFtarSd6WJkStVMw5xyVqYTvkwfzuf/5FgtkVoB0729j1rjXwThS7Vio+Mo6DNnvLfahoZ+i/o32lULuJ3NNiz7q6+pyAUkJaFF6JwaM2lUJlV0MlnQn5aTRbEu0SEqHUa0A4AdiGuB1kFXRfVyg5d87+Dg4DL6m2TLAub60ilj7A1Ec4odSAc8X95sHh7+ZRPCFo6Fnp7HfU/fBng/hi10CjCnWnJjsxvDNxWw0NfV6Rv5GgP3I3jGWXumdTD/3cbEOP2ZbOZp69yniG3FQ9z1jD7bnBu9Fc2tKGC2q+uAJOQHBDRiZX1x36o7fWBs7J9ownbtO+n0/qWkvW7UPIfc37WgT6ZGR++EOJyeQDSb9UB+DZ1G6DdLDzyS+b/kBCYGsYgJbSQHuThGKRcw5xdeQf8YdNHsc6ePXrlSYMBuSIAFTGAtQo+VuALo4BX83N190NWZWbynBjhOHsmNfFWLeL6v+ynsA58zDvvAC8j5PkbOcXCMg2PZFk3q8MjI7WAG/Dp9AwP7jdGBOOQkAvlFUB+irtm16I1Zw9YBcpGTGXYmk3kQIC/Cds55l+iMI3jqhjAuaoe+am2Jw5GT3Nbz3CkE12NavmzN5+erJW7046n/CH1RO/RVa8lBLozXk9uqykkGAyRXLWlLv5jyp4RFsG5vGVzpDLnIjTWgnRy2Rr+tDKvRc7Y8AyZq10jj8DqXdnIRNtFZb+t/ZRtXcDiVnzpqx8mPcDWxgARUqx0W1QB9MeUZiNrV4qP+Ehc+BpNgATsTX8ozYKL2NtFYAHc84fG7ndxUPr+AR/iQSns7uSUufAymwDOb2+NjK27lEFocm/EE2WpyIy/Hi66MWuMKJn8RvxIcj87IM5Vh9663ziW36kR0HNenXuxmfaD8JC7tfKbrhFr7LiZCrMjrzTeGx+PmkosrkNzW94ObzwocJ7A1HokLolY+AvkTiD/q1H0cN48c5EL8Crkttsa/AXQVDmutfyku0E7jShx49XqV3MFK8IryDhYVbj7Sj2P2eBxwcXoe8T8idsKKPRcnZw1b+slFTubwUwhktrfnAt7J++jwQtLZcm3sr9LQrjRzz6cfMv9aLvgmnAGvpoaGLxM4mAEaLV7iAzQ3oU0IvD5x9ix3yF2RAAuYAOO2f7PEFWCXZ4C9Pb2UsgDeVnFSpbFK7/IWu7TPTvBqzbGdCHOJQSxiEjt6IyZmxQyEJHv6xyQsYk//moVFsN2zP6fRImjfq7/n/wFDguUQFNEwugAAAABJRU5ErkJggg==');
+  }
+
+  div.callout-important.callout-style-default .callout-title {
+    background-color: #f7dddc
+  }
+
+  div.callout-warning {
+    border-left-color: #f0ad4e !important;
+  }
+
+  div.callout-warning .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAAETklEQVRYCeVWW2gcVRg+58yaTUnizqbipZeX4uWhBEniBaoUX1Ioze52t7sRq6APio9V9MEaoWlVsFasRq0gltaAPuxms8lu0gcviE/FFOstVbSIxgcv6SU7EZqmdc7v9+9mJtNks51NTUH84ed889/PP+cmxP+d5FIbMJmNbpREu4WUkiTtCicKny0l1pIKmBzovF2S+hIJHX8iEu3hZJ5lNZGqyRrGSIQpq15AzF28jgpeY6yk6GVdrfFqdrD6Iw+QlB8g0YS2g7dyQmXM/IDhBhT0UCiRf59lfqmmDvzRt6kByV/m4JjtzuaujMUM2c5Z2d6JdKrRb3K2q6mA+oYVz8JnDdKPmmNthzkAk/lN63sYPgevrguc72aZX/L9C6x09GYyxBgCX4NlvyGUHOKELlm5rXeR1kchuChJt4SSwyddZRXgvwMGvYo4QSlk3/zkHD8UHxwVJA6zjZZqP8v8kK8OWLnIZtLyCAJagYC4rTGW/9Pqj92N/c+LUaAj27movwbi19tk/whRCIE7Q9vyI6yvRpftAKVTdUjOW40X3h5OXsKCdmFcx0xlLJoSuQngnrJe7Kcjm4OMq9FlC7CMmScQANuNvjfP3PjGXDBaUQmbp296S5L4DrpbrHN1T87ZVEZVCzg1FF0Ft+dKrlLukI+/c9ENo+TvlTDbYFvuKPtQ9+l052rXrgKoWkDAFnvh0wTOmYn8R5f4k/jN/fZiCM1tQx9jQQ4ANhqG4hiL0qIFTGViG9DKB7GYzgubnpofgYRwO+DFjh0Zin2m4b/97EDkXkc+f6xYAPX0KK2I/7fUQuwzuwo/L3AkcjugPNixC8cHf0FyPjWlItmLxWw4Ou9YsQCr5fijMGoD/zpdRy95HRysyXA74MWOnscpO4j2y3HAVisw85hX5+AFBRSHt4ShfLFkIMXTqyKFc46xdzQM6XbAi702a7sy04J0+feReMFKp5q9esYLCqAZYw/k14E/xcLLsFElaornTuJB0svMuJINy8xkIYuL+xPAlWRceH6+HX7THJ0djLUom46zREu7tTkxwmf/FdOZ/sh6Q8qvEAiHpm4PJ4a/doJe0gH1t+aHRgCzOvBvJedEK5OFE5jpm4AGP2a8Dxe3gGJ/pAutug9Gp6he92CsSsWBaEcxGx0FHytmIpuqGkOpldqNYQK8cSoXvd+xLxXADw0kf6UkJNFtdo5MOgaLjiQOQHcn+A6h5NuL2s0qsC2LOM75PcF3yr5STuBSAcGG+meA14K/CI21HcS4LBT6tv0QAh8Dr5l93AhZzG5ZJ4VxAqdZUEl9z7WJ4aN+svMvwHHL21UKTd1mqvChH7/Za5xzXBBKrUcB0TQ+Ulgkfbi/H/YT5EptrGzsEK7tR1B7ln9BBwckYfMiuSqklSznIuoIIOM42MQO+QnduCoFCI0bpkzjCjddHPN/F+2Yu+sd9bKNpVwHhbS3LluK/0zgfwD0xYI5dXuzlQAAAABJRU5ErkJggg==');
+  }
+
+  div.callout-warning.callout-style-default .callout-title {
+    background-color: #fcefdc
+  }
+
+  div.callout-tip {
+    border-left-color: #02b875 !important;
+  }
+
+  div.callout-tip .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAADr0lEQVRYCe1XTWgTQRj9ZjZV8a9SPIkKgj8I1bMHsUWrqYLVg4Ue6v9BwZOxSYsIerFao7UiUryIqJcqgtpimhbBXoSCVxUFe9CTiogUrUp2Pt+3aUI2u5vdNh4dmMzOzHvvezuz8xNFM0mjnbXaNu1MvFWRXkXEyE6aYOYJpdW4IXuA4r0fo8qqSMDBU0v1HJUgVieAXxzCsdE/YJTdFcVIZQNMyhruOMJKXYFoLfIfIvVIMWdsrd+Rpd86ZmyzzjJmLStqRn0v8lzkb4rVIXvnpScOJuAn2ACC65FkPzEdEy4TPWRLJ2h7z4cArXzzaOdKlbOvKKX25Wl00jSnrwVxAg3o4dRxhO13RBSdNvH0xSARv3adTXbBdTf64IWO2vH0LT+cv4GR1DJt+DUItaQogeBX/chhbTBxEiZ6gftlDNXTrvT7co4ub5A6gp9HIcHvzTa46OS5fBeP87Qm0fQkr4FsYgVQ7Qg+ZayaDg9jhg1GkWj8RG6lkeSacrrHgDaxdoBiZPg+NXV/KifMuB6//JmYH4CntVEHy/keA6x4h4CU5oFy8GzrBS18cLJMXcljAKB6INjWsRcuZBWVaS3GDrqB7rdapVIeA+isQ57Eev9eCqzqOa81CY05VLd6SamW2wA2H3SiTbnbSxmzfp7WtKZkqy4mdyAlGx7ennghYf8voqp9cLSgKdqNfa6RdRsAAkPwRuJZNbpByn+RrJi1RXTwdi8RQF6ymDwGMAtZ6TVE+4uoKh+MYkcLsT0Hk8eAienbiGdjJHZTpmNjlbFJNKDVAp2fJlYju6IreQxQ08UJDNYdoLSl6AadO+fFuCQqVMB1NJwPm69T04Wv5WhfcWyfXQB+wXRs1pt+nCknRa0LVzSA/2B+a9+zQJadb7IyyV24YAxKp2Jqs3emZTuNnKxsah+uabKbMk7CbTgJx/zIgQYErIeTKRQ9yD9wxVof5YolPHqaWo7TD6tJlh7jQnK5z2n3+fGdggIOx2kaa2YI9QWarc5Ce1ipNWMKeSG4DysFF52KBmTNMmn5HqCFkwy34rDg05gDwgH3bBi+sgFhN/e8QvRn8kbamCOhgrZ9GJhFDgfcMHzFb6BAtjKpFhzTjwv1KCVuxHvCbsSiEz4CANnj84cwHdFXAbAOJ4LTSAawGWFn5tDhLMYz6nWeU2wJfIhmIJBefcd/A5FWQWGgrWzyORZ3Q6HuV+Jf0Bj+BTX69fm1zWgK7By1YTXchFDORywnfQ7GpzOo6S+qECrsx2ifVQAAAABJRU5ErkJggg==');
+  }
+
+  div.callout-tip.callout-style-default .callout-title {
+    background-color: #ccf1e3
+  }
+
+  div.callout-caution {
+    border-left-color: #fd7e14 !important;
+  }
+
+  div.callout-caution .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAACV0lEQVRYCdVWzWoUQRCuqp2ICBLJXgITZL1EfQDBW/bkzUMUD7klD+ATSHBEfAIfQO+iXsWDxJsHL96EHAwhgzlkg8nBg25XWb0zIb0zs9muYYWkoKeru+vn664fBqElyZNuyh167NXJ8Ut8McjbmEraKHkd7uAnAFku+VWdb3reSmRV8PKSLfZ0Gjn3a6Xlcq9YGb6tADjn+lUfTXtVmaZ1KwBIvFI11rRXlWlatwIAAv2asaa9mlB9wwygiDX26qaw1yYPzFXg2N1GgG0FMF8Oj+VIx7E/03lHx8UhvYyNZLN7BwSPgekXXLribw7w5/c8EF+DBK5idvDVYtEEwMeYefjjLAdEyQ3M9nfOkgnPTEkYU+sxMq0BxNR6jExrAI31H1rzvLEfRIdgcv1XEdj6QTQAS2wtstEALLG1yEZ3QhH6oDX7ExBSFEkFINXH98NTrme5IOaaA7kIfiu2L8A3qhH9zRbukdCqdsA98TdElyeMe5BI8Rs2xHRIsoTSSVFfCFCWGPn9XHb4cdobRIWABNf0add9jakDjQJpJ1bTXOJXnnRXHRf+dNL1ZV1MBRCXhMbaHqGI1JkKIL7+i8uffuP6wVQAzO7+qVEbF6NbS0LJureYcWXUUhH66nLR5rYmva+2tjRFtojkM2aD76HEGAD3tPtKM309FJg5j/K682ywcWJ3PASCcycH/22u+Bh7Aa0ehM2Fu4z0SAE81HF9RkB21c5bEn4Dzw+/qNOyXr3DCTQDMBOdhi4nAgiFDGCinIa2owCEChUwD8qzd03PG+qdW/4fDzjUMcE1ZpIAAAAASUVORK5CYII=');
+  }
+
+  div.callout-caution.callout-style-default .callout-title {
+    background-color: #ffe5d0
+  }
+
+  </style>
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+</head>
+<body class="quarto-dark">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" class="quarto-title-block center">
+  <h1 class="title">Putting the Articles in Their Place!</h1>
+  <p class="subtitle">Organize Scientific Literature with Reference Management Software</p>
+
+<div class="quarto-title-authors">
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+Colton Baumler <a href="https://orcid.org/0000-0002-5926-7792" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a>
+</div>
+<div class="quarto-title-author-email">
+<a href="mailto:ccbaumler@ucdavis.edu">ccbaumler@ucdavis.edu</a>
+</div>
+        <p class="quarto-title-affiliation">
+            University of California, Davis
+          </p>
+    </div>
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+Bryshal Moore 
+</div>
+<div class="quarto-title-author-email">
+<a href="mailto:brymoore@ucdavis.edu">brymoore@ucdavis.edu</a>
+</div>
+        <p class="quarto-title-affiliation">
+            University of California, Davis
+          </p>
+    </div>
+</div>
+
+  <p class="date">Saturday, the 23<sup style="font-size:65%;font-style:italic;">th</sup> of March, 2024</p>
+</section>
+<section id="overview" class="title-slide slide level1 center">
+<h1>Overview</h1>
+<aside class="notes">
+<p>Backward design for teaching - “What do you want the audience to take away?”</p>
+<ul>
+<li><p>This is where you go from surviving to thriving!</p></li>
+<li><p>Basics of reference management software</p>
+<ul>
+<li>Understand the basics of reference management software</li>
+<li>How to set up zotero for best usage</li>
+<li>explore functionality of zotero
+<ul>
+<li>ResearchRabbit</li>
+</ul></li>
+<li>Techniques I like think work with zotero</li>
+</ul></li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+<div>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li><p>Background</p></li>
+<li><p>Install &amp; Setup</p></li>
+</ul>
+</div><div class="column" style="width:50%;">
+<ul>
+<li><p>Suggested Usage</p></li>
+<li><p>Techniques for Success</p></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+
+<section>
+<section id="background" class="title-slide slide level1 center">
+<h1>Background</h1>
+<div>
+<ul>
+<li>Reference management software</li>
+<li>Needs of the scholar</li>
+<li>Zotero and others</li>
+</ul>
+</div>
+</section>
+<section id="reference-management-software-for-surviving-to-thriving" class="slide level2">
+<h2><span class="small">Reference Management Software for Surviving to Thriving</span></h2>
+<h3 id="background-1">Background</h3>
+<div class="quarto-layout-panel" data-layout="[[100], [50, 50]]">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: flex-start;">
+<ul>
+<li class="fragment">What <em>is</em> RMS?
+<ul>
+<li class="fragment">Database of bibliographic records</li>
+<li class="fragment">Creator of bibliographic citations</li>
+<li class="fragment">Capable of knowledge management
+<ul>
+<li class="fragment">Collection structure</li>
+<li class="fragment">Tags</li>
+<li class="fragment">Notetaking</li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<p><span class="fragment">What influences choice?</span></p>
+</div>
+<div class="small quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<ul>
+<li class="fragment">Campus educators (library, dept, etc.)</li>
+<li class="fragment">Teachers and Colleagues</li>
+<li class="fragment">But, Overall? Exposure!</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="scholars-need-the-lowest-bar-to-a-rms" class="slide level2">
+<h2>Scholars Need the Lowest Bar to a RMS</h2>
+<h3 id="background-2">Background</h3>
+<div class="quarto-layout-panel" data-layout="[[70,30], [100]]">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 70.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-left">
+<figure>
+<p><img data-src="images/ref-manager-participate-ratings2.png"></p>
+<figcaption><span class="small">User-defined important parameters for RMS. Nitsos et al., 2022, p.&nbsp;105</span></figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 30.0%;justify-content: flex-start;">
+<p><strong>Scholar needs?</strong></p>
+<ol type="1">
+<li class="fragment">Easy</li>
+<li class="fragment">Free</li>
+<li class="fragment">Friendly</li>
+</ol>
+</div>
+</div>
+</div>
+</section>
+<section id="zotero-is-free-open-source-community-driven-software" class="slide level2">
+<h2><span class="small">Zotero is <strong><em>Free</em></strong>, Open-source, <strong><em>Community-driven</em></strong> Software</span></h2>
+<h3 id="background-3">Background</h3>
+
+<img data-src="images/ref-manager-participate-ratings.png" class="r-stretch quarto-figure-center"><p class="caption"><span class="small">Participant’s ratings of RMS. Cai et al., 2021, p.&nbsp;68</span></p><div class="fragment">
+<blockquote>
+<p>Zotero [zoh-TAIR-oh] is a free, easy-to-use tool to help you collect, organize, cite, and share your research sources. - <a href="https://www.zotero.org/support/quick_start_guide">Zotero’s quick start guide</a></p>
+</blockquote>
+</div>
+</section></section>
+<section>
+<section id="install-setup" class="title-slide slide level1 center">
+<h1>Install &amp; Setup</h1>
+<div>
+<ul>
+<li>Download Zotero</li>
+<li>Optimize Zotero Storage</li>
+<li>Extend Zotero for Knowledge Management</li>
+</ul>
+</div>
+</section>
+<section id="create-a-web-account" class="slide level2">
+<h2>Create a web account</h2>
+<h3 id="install-setup-1">Install &amp; Setup</h3>
+<div class="quarto-layout-panel" data-layout="[[40, 60], [100]]">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 40.0%;justify-content: flex-start;">
+<p><strong>Benefits</strong></p>
+<ul>
+<li class="fragment">Free 300 mb storage
+<ul>
+<li class="fragment">Limiting but there is a hack!</li>
+</ul></li>
+<li class="fragment">Access library anywhere with internet</li>
+<li class="fragment">Syncing and backup across all devices</li>
+<li class="fragment">Join shared collections with Zotero groups</li>
+</ul>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 60.0%;justify-content: center;">
+<div class="quarto-figure quarto-figure-right">
+<figure>
+<p><a href="https://www.zotero.org/user/register/"><img data-src="images/zotero-web-account.png" class="quarto-figure quarto-figure-right"></a></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="download-zotero-for-your-os" class="slide level2">
+<h2>Download Zotero for your OS</h2>
+<h3 id="install-setup-2">Install &amp; Setup</h3>
+<div class="quarto-layout-panel" data-layout="[[40, 60], [100]]">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 40.0%;justify-content: flex-start;">
+<p><strong>Details</strong></p>
+<ul>
+<li class="fragment">Mac</li>
+<li class="fragment">Windows</li>
+<li class="fragment">Linux</li>
+<li class="fragment">Chromebook</li>
+<li class="fragment">Automatically updates</li>
+</ul>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 60.0%;justify-content: center;">
+<div class="quarto-figure quarto-figure-right">
+<figure>
+<p><a href="https://www.zotero.org/download/"><img data-src="images/zotero-download.png" class="quarto-figure quarto-figure-right"></a></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="browser-with-zotero-connector" class="slide level2">
+<h2>Browser with Zotero connector</h2>
+<h3 id="install-setup-3">Install &amp; Setup</h3>
+<aside class="notes">
+<p>https://forums.zotero.org/discussion/76073/solved-zotero-connector-shortcut-conflict-with-firefox</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+<div class="quarto-layout-panel" data-layout="[[40, 60], [100]]">
+<div class="quarto-layout-row">
+<div class="small quarto-layout-cell" style="flex-basis: 40.0%;justify-content: flex-start;">
+<p><strong>Details</strong></p>
+<ul>
+<li class="fragment">Firefox (Recommended)
+<ul>
+<li class="fragment"><span class="smaller">After install, navigate to <code>about:addons</code></span><span class="arrow">🢖</span> <span class="emoji" data-emoji="gear">⚙️</span> (upper right) <span class="arrow">🢖</span> <code>Manage Extention Shortcuts</code> <span class="arrow">🢖</span> <code>Activate toolbar button</code></li>
+<li class="fragment"><span class="smaller"><code>Ctrl/Cmd+Shift+S</code></span><span class="arrow">🢖</span> <code>Ctrl/Cmd+Shift+F</code></li>
+</ul></li>
+<li class="fragment">Chrome</li>
+<li class="fragment">Edge</li>
+<li class="fragment">Safari</li>
+</ul>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 60.0%;justify-content: center;">
+<div class="quarto-figure quarto-figure-right">
+<figure>
+<p><a href="https://www.zotero.org/download/"><img data-src="images/zotero-connector.png" class="quarto-figure quarto-figure-right"></a></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="download-a-mobile-app" class="slide level2">
+<h2>Download a mobile app</h2>
+<h3 id="install-setup-4">Install &amp; Setup</h3>
+<p>Gathering and managing on the go</p>
+<ul>
+<li class="fragment">Portability</li>
+<li class="fragment"><code>Share</code> <span class="arrow">🢖</span> <code>Zotero app</code></li>
+</ul>
+<style>
+.container{
+    display: flex;
+}
+.col{
+    flex: 1;
+}
+</style>
+<div class="container">
+<div class="col">
+<svg width="500" height="200">
+<a href="https://play.google.com/store/apps/details?id=com.mickstarify.zooforzotero"> <rect x="10" y="10" width="480" height="180" rx="10" ry="10" fill="blue"></rect> <text x="50%" y="50%" text-anchor="middle" fill="white" stroke="white" stroke-width="1">Android</text> </a>
+</svg>
+</div>
+<div class="col">
+<svg width="500" height="200">
+<a href="https://apps.apple.com/us/app/zotero/id1513554812"> <rect x="10" y="10" width="480" height="180" rx="10" ry="10" fill="red"></rect> <text x="50%" y="50%" text-anchor="middle" fill="white" stroke="white" stroke-width="1">IOS</text> </a>
+</svg>
+</div>
+</div>
+</section>
+<section id="downloading-add-ons-to-extend-zoteros-abilities" class="slide level2">
+<h2><span class="small">Downloading add-ons to extend Zotero’s abilities!</span></h2>
+<h3 id="install-setup-5">Install &amp; Setup</h3>
+<ul>
+<li class="fragment">Download the <code>.xpi</code> file for the version you want
+<ul>
+<li class="fragment">For Firefox, right-click and <code>Save Link As...</code>
+<ul>
+<li class="fragment">OR! Set the <code>Boolean</code> for <code>browser.altClickSave</code> to true at <code>about:config</code></li>
+</ul></li>
+</ul></li>
+</ul>
+<p><br><br></p>
+<div>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li><a href="http://zotfile.com/">Zotfile</a>
+<ul>
+<li><a href="https://github.com/jlegewie/zotfile/releases/tag/v5.1.2">Latest Release</a></li>
+</ul></li>
+</ul>
+</div><div class="column" style="width:50%;">
+<ul>
+<li><a href="https://retorque.re/zotero-better-bibtex/">Better BibTeX</a>
+<ul>
+<li><a href="https://github.com/retorquere/zotero-better-bibtex/releases/latest">Latest Release</a></li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="install-the-add-ons-to-complete-the-extenstion" class="slide level2">
+<h2>Install the add-ons to complete the extenstion</h2>
+<h3 id="install-setup-6">Install &amp; Setup</h3>
+<div class="columns">
+<div class="column" style="width:45%;">
+<div class="small">
+<ol type="1">
+<li class="fragment">Open Zotero</li>
+<li class="fragment">Select <code>Tools</code> <span class="arrow">🢖</span> <code>Add-ons</code></li>
+<li class="fragment">Select the gear (<span class="emoji" data-emoji="gear">⚙️</span>) in the top-right corner</li>
+<li class="fragment">Choose <code>Install Add-on From File…</code></li>
+<li class="fragment">Choose <code>.xpi</code> files to install</li>
+<li class="fragment">Select <code>Open</code></li>
+<li class="fragment">Select <code>Install</code></li>
+<li class="fragment">Restart Zotero</li>
+</ol>
+</div>
+</div><div class="column" style="width:55%;">
+<p><img data-src="images/addons.gif"> <span class="smaller"><code>alt-click</code> to zoom in</span></p>
+</div>
+</div>
+</section>
+<section id="configure-zotero-for-limitless-well-organized-storage" class="slide level2">
+<h2><span class="small">Configure Zotero for limitless, well-organized storage</span></h2>
+<h3 id="install-setup-7">Install &amp; Setup</h3>
+<aside class="notes">
+<p>https://forums.zotero.org/discussion/83262/zotfile-move-web-snapshot-web-snapshot-and-cloud-storage https://github.com/jlegewie/zotfile/issues/566 https://ikashnitsky.phd/2019/zotero/ https://ikos-dighum.github.io/contents/betterbibtex/markdown_zotero.html</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+<div class="small">
+<ol type="1">
+<li class="fragment">Go to <code>Edit</code> <span class="arrow">🢖</span> <code>Preferences</code>
+<ul>
+<li class="fragment">For MacOS, it is <code>Zotero</code> <span class="arrow">🢖</span> <code>Preferences</code></li>
+</ul></li>
+<li class="fragment">Under <code>General</code> <span class="arrow">🢖</span> <code>File Handling</code>
+<ul>
+<li class="fragment">Uncheck <code>Automatically rename attachemnet files using parent metadata</code></li>
+</ul></li>
+<li class="fragment">Under <code>Advanced</code>
+<ul>
+<li class="fragment">Under <code>Files and Folders</code> <span class="arrow">🢖</span> <code>Linked Attachment Base Directory</code>
+<ul>
+<li class="fragment">Enter a filepath (e.g.&nbsp;absolute/filepath/to/zotero-library)</li>
+</ul></li>
+<li class="fragment">Under <code>Files and Folders</code> <span class="arrow">🢖</span> <code>Data Directory Location</code>
+<ul>
+<li class="fragment">Leave as Zotero, or Enter a filepath (e.g.&nbsp;absolute/filepath/to/zotero-system)</li>
+</ul></li>
+</ul></li>
+</ol>
+</div>
+</section>
+<section id="zotfile-is-for-automated-attachment-management" class="slide level2 scrollable">
+<h2><span class="small">Zotfile is for automated attachment management</span></h2>
+<h3 id="install-setup-8">Install &amp; Setup</h3>
+<div class="small">
+<ol type="1">
+<li class="fragment">Go to <code>Tools</code> <span class="arrow">🢖</span> <code>ZotFile Preferences...</code></li>
+<li class="fragment">Under <code>General settings</code>
+<ul>
+<li class="fragment">Under <code>Source Folder for Attaching New Files</code>
+<ul>
+<li class="fragment">Typically, set this to the <code>Downloads</code> directory</li>
+</ul></li>
+<li class="fragment">Under <code>Location of Files</code>
+<ul>
+<li class="fragment">Select <code>Custom Location</code> and choose your <code>zotero-library</code></li>
+<li class="fragment">Check <code>Use subfolder defined by</code>
+<ul>
+<li class="fragment">Type <code>/{%y}_{%a}</code> for <code>Year_Author</code> (e.g.&nbsp;<code>2014_Zut</code>)</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li class="fragment">Under <code>Renaming Rules</code>
+<ul>
+<li class="fragment">Under <code>Renaming Format</code>
+<ul>
+<li class="fragment">Change <code>Format for all Item Types except Patents</code> to <code>{%y_}{%a_}{%t}</code></li>
+</ul></li>
+<li class="fragment">Under <code>Additional Settings</code>
+<ul>
+<li class="fragment">Only check the following:
+<ul>
+<li class="fragment"><code>Change to lower case</code></li>
+<li class="fragment"><code>Replace blanks</code></li>
+<li class="fragment"><code>Truncate title after . or : or ?</code></li>
+<li class="fragment"><code>Maximum length of title</code> (I suggest <code>80</code>)</li>
+<li class="fragment"><code>Maximum number of authors</code> (I suggest <code>1</code>)</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li class="fragment">Under <code>Advanced Settings</code> <span class="arrow">🢖</span> <code>Other Advanced Settings</code>
+<ul>
+<li class="fragment">Set <code>Automatically rename new attachments</code> <span class="arrow">🢖</span> <code>Always rename</code></li>
+<li class="fragment">Deselect <code>Ask user when attaching new files</code></li>
+<li class="fragment">Deselect <code>Ask user to (batch) rename or move 3 or more attachments</code></li>
+<li class="fragment">Select <code>Remove special characters (diacritics) from filename</code></li>
+<li class="fragment">Select <code>Only work with the following filetypes</code>
+<ul>
+<li class="fragment">Add <code>,html</code> to the list</li>
+</ul></li>
+</ul></li>
+</ol>
+</div>
+</section>
+<section id="backup-all-zoteros-metadata-by-syncing-with-the-web" class="slide level2">
+<h2><span class="small">Backup all Zotero’s metadata by syncing with the web</span></h2>
+<h3 id="install-setup-9">Install &amp; Setup</h3>
+<ol type="1">
+<li class="fragment">Select <code>Edit</code> <span class="arrow">🢖</span> <code>Preferences</code></li>
+<li class="fragment">Under <code>Sync</code>
+<ul>
+<li class="fragment">Under <code>Data syncing</code>
+<ul>
+<li class="fragment">Enter username and password</li>
+<li class="fragment">Uncheck <code>sync full-text content</code></li>
+</ul></li>
+<li class="fragment">Under <code>File syncing</code>
+<ul>
+<li class="fragment">Uncheck <code>sync attachment files in my library using</code></li>
+<li class="fragment">Uncheck <code>Sync attachment files in group libraries using Zotero storage</code></li>
+</ul></li>
+</ul></li>
+</ol>
+</section>
+<section id="sync-attachments-across-computers-with-google-drive" class="slide level2 scrollable">
+<h2><span class="small">Sync attachments across computers with google drive</span></h2>
+<h3 id="install-setup-10">Install &amp; Setup</h3>
+<ol type="1">
+<li class="fragment">Download and install <a href="https://www.google.com/drive/download/">Drive for Desktop</a></li>
+<li class="fragment">Skip everything</li>
+<li class="fragment">Go to your <code>zotero-library</code> directory</li>
+<li class="fragment">Right-click <span class="arrow">🢖</span> <code>Sync or Backup this folder</code></li>
+<li class="fragment">Only check <code>Sync with Google Drive</code>
+<ul>
+<li class="fragment">Should now be synced under <code>Computers</code> in google drive</li>
+</ul></li>
+<li class="fragment">In secondary computer,
+<ol type="i">
+<li class="fragment">Download, install, and sync <a href="https://www.google.com/drive/download/">Drive for Desktop</a></li>
+<li class="fragment">Allow <code>Offline access</code> to <code>zotero-library</code> for local storage</li>
+<li class="fragment">Repeat the Install &amp; Setup section until this point - BUT! Replace the <code>zotero-library</code> path with the Google Drive <code>zotero-library</code> path</li>
+</ol></li>
+</ol>
+</section>
+<section id="zotero-can-become-a-personal-web-archive" class="slide level2">
+<h2>Zotero can become a personal web archive</h2>
+<h3 id="install-setup-11">Install &amp; Setup</h3>
+<aside class="notes">
+<p>zotfile preferences for html</p>
+<p>Zotero can also function as a personal web archive. Storing the html files for the websites that are useful for reviewing.</p>
+<p>https://github.com/jlegewie/zotfile/issues/566</p>
+<p>However, websnap shots have an issue pending in the github repository. They do not automatically rename and move</p>
+<p>Simple manual fix until this issue is fixed in an update is to</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+<p><a href="https://github.com/jlegewie/zotfile/issues/566">Zotfile has trouble with html currently. A solution:</a></p>
+<ol type="1">
+<li class="fragment">Go to <code>My Library</code></li>
+<li class="fragment">Organize by <code>Attachments</code> <span class="emoji" data-emoji="paperclip">📎</span></li>
+<li class="fragment">Click on the webpage icon to the left of the title</li>
+<li class="fragment">Select all items (<code>Ctrl+A</code>)</li>
+<li class="fragment">Right click <span class="arrow">🢖</span> <code>Manage attachments</code> <span class="arrow">🢖</span> <code>Rename and Move</code></li>
+</ol>
+</section>
+<section id="better-bibtex-supports-markdown-bibliographies" class="slide level2">
+<h2><span class="small">Better BibTeX supports markdown bibliographies</span></h2>
+<h3 id="install-setup-12">Install &amp; Setup</h3>
+<ol type="1">
+<li class="fragment">Select <code>Edit</code> <span class="arrow">🢖</span> <code>Preferences</code></li>
+<li class="fragment">Under <code>Better BibTeX</code> <span class="arrow">🢖</span> <code>Open Better BibTeX preferences...</code></li>
+<li class="fragment">Set <code>Citation key formula</code>
+<ul>
+<li class="fragment">I suggest <code>auth.lower + year + shorttitle(3,3) + journal.lower.abbr</code></li>
+</ul></li>
+<li class="fragment">When citing, add <code>@</code> before the citation key per item cited.</li>
+</ol>
+</section>
+<section id="migrating-to-zotero-is-mostly-painless" class="slide level2">
+<h2>Migrating to Zotero is mostly painless</h2>
+<h3 id="install-setup-13">Install &amp; Setup</h3>
+<p>Follow the <a href="https://www.zotero.org/support/moving_to_zotero">instructions for popular tool</a></p>
+<p><br><br></p>
+<div class="small">
+<blockquote>
+<p>You can also import from other tools, such as Reference Manager, RefWorks, Papers, Google Scholar Library, ReadCube, etc., by exporting to a standardized reference format, such as RIS, BibTeX, or CSL JSON, and then importing into Zotero by clicking File → “Import…” and choose “A file”.</p>
+</blockquote>
+</div>
+</section></section>
+<section>
+<section id="suggested-usage" class="title-slide slide level1 center">
+<h1>Suggested Usage</h1>
+<div>
+<ul>
+<li>Organizing in multiple ways</li>
+<li>Efficiently using Zotero</li>
+<li>AI extensions</li>
+</ul>
+</div>
+</section>
+<section id="a-simple-standard-directory-structure-is-easy-to-organize" class="slide level2">
+<h2><span class="small">A simple, standard directory structure is easy to organize</span></h2>
+<h3 id="suggested-usage-1">Suggested Usage</h3>
+<div class="columns">
+<div class="column">
+<ul>
+<li class="fragment">PARA
+<ul>
+<li class="fragment">Projects
+<ul>
+<li class="fragment">Short-term efforts</li>
+</ul></li>
+<li class="fragment">Areas
+<ul>
+<li class="fragment">Long-term efforts</li>
+</ul></li>
+<li class="fragment">Resources
+<ul>
+<li class="fragment">Topics of interest</li>
+</ul></li>
+<li class="fragment">Archives
+<ul>
+<li class="fragment">Inactive items from the other categories</li>
+</ul></li>
+</ul></li>
+</ul>
+</div><div class="column">
+<div class="vscroll">
+<div class="cell" data-fig-height="6.5" data-fig-width="3" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class=""><p></p>
+<div>
+<svg width="288" height="624" viewbox="0.00 0.00 224.00 512.00" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" style="; max-width: none; max-height: none; display: block; margin: auto auto auto auto">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 508)">
+<title>PARA</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-508 220,-508 220,4 -4,4"></polygon>
+<!-- My Library -->
+<g id="node1" class="node">
+<title>My Library</title>
+<defs>
+<lineargradient id="l_0" gradientunits="userSpaceOnUse" x1="45" y1="-504" x2="45" y2="-450">
+<stop offset="0" style="stop-color:sandybrown;stop-opacity:1.;"></stop>
+<stop offset="1" style="stop-color:peru;stop-opacity:1.;"></stop>
+</lineargradient>
+</defs>
+<polygon fill="url(#l_0)" stroke="black" points="90,-504 4,-504 0,-500 0,-450 86,-450 90,-454 90,-504"></polygon>
+<polyline fill="none" stroke="black" points="86,-500 0,-500 "></polyline>
+<polyline fill="none" stroke="black" points="86,-500 86,-450 "></polyline>
+<polyline fill="none" stroke="black" points="86,-500 90,-504 "></polyline>
+<text text-anchor="middle" x="45" y="-472.8" font-family="Times,serif" font-size="14.00">My Library</text>
+</g>
+<!-- Projects -->
+<g id="node2" class="node">
+<title>Projects</title>
+<defs>
+<lineargradient id="l_1" gradientunits="userSpaceOnUse" x1="171" y1="-436" x2="171" y2="-378">
+<stop offset="0" style="stop-color:lightyellow;stop-opacity:1.;"></stop>
+<stop offset="1" style="stop-color:sandybrown;stop-opacity:1.;"></stop>
+</lineargradient>
+</defs>
+<polygon fill="url(#l_1)" stroke="black" points="216,-432 213,-436 192,-436 189,-432 126,-432 126,-378 216,-378 216,-432"></polygon>
+<text text-anchor="middle" x="171" y="-400.8" font-family="Times,serif" font-size="14.00">Projects</text>
+</g>
+<!-- Areas -->
+<g id="node3" class="node">
+<title>Areas</title>
+<defs>
+<lineargradient id="l_2" gradientunits="userSpaceOnUse" x1="171" y1="-310" x2="171" y2="-252">
+<stop offset="0" style="stop-color:lightyellow;stop-opacity:1.;"></stop>
+<stop offset="1" style="stop-color:sandybrown;stop-opacity:1.;"></stop>
+</lineargradient>
+</defs>
+<polygon fill="url(#l_2)" stroke="black" points="216,-306 213,-310 192,-310 189,-306 126,-306 126,-252 216,-252 216,-306"></polygon>
+<text text-anchor="middle" x="171" y="-274.8" font-family="Times,serif" font-size="14.00">Areas</text>
+</g>
+<!-- Resources -->
+<g id="node4" class="node">
+<title>Resources</title>
+<defs>
+<lineargradient id="l_3" gradientunits="userSpaceOnUse" x1="171" y1="-184" x2="171" y2="-126">
+<stop offset="0" style="stop-color:lightyellow;stop-opacity:1.;"></stop>
+<stop offset="1" style="stop-color:sandybrown;stop-opacity:1.;"></stop>
+</lineargradient>
+</defs>
+<polygon fill="url(#l_3)" stroke="black" points="216,-180 213,-184 192,-184 189,-180 126,-180 126,-126 216,-126 216,-180"></polygon>
+<text text-anchor="middle" x="171" y="-148.8" font-family="Times,serif" font-size="14.00">Resources</text>
+</g>
+<!-- Archives -->
+<g id="node5" class="node">
+<title>Archives</title>
+<defs>
+<lineargradient id="l_4" gradientunits="userSpaceOnUse" x1="171" y1="-58" x2="171" y2="0">
+<stop offset="0" style="stop-color:lightyellow;stop-opacity:1.;"></stop>
+<stop offset="1" style="stop-color:sandybrown;stop-opacity:1.;"></stop>
+</lineargradient>
+</defs>
+<polygon fill="url(#l_4)" stroke="black" points="216,-54 213,-58 192,-58 189,-54 126,-54 126,0 216,0 216,-54"></polygon>
+<text text-anchor="middle" x="171" y="-22.8" font-family="Times,serif" font-size="14.00">Archives</text>
+</g>
+<!-- W0 -->
+<g id="node6" class="node">
+<title>W0</title>
+<ellipse fill="lightyellow:sandybrown" stroke="black" cx="45" cy="-378" rx="0" ry="0"></ellipse>
+</g>
+<!-- W0&#45;&gt;My Library -->
+<g id="edge1" class="edge">
+<title>W0-&gt;My Library</title>
+<path fill="none" stroke="black" d="M45,-378.07C45,-380.02 45,-421.28 45,-449.89"></path>
+</g>
+<!-- W0&#45;&gt;Projects -->
+<g id="edge5" class="edge">
+<title>W0-&gt;Projects</title>
+<path fill="none" stroke="black" d="M45.09,-378.5C47.34,-378.5 90.74,-378.5 125.97,-378.5"></path>
+</g>
+<!-- W1 -->
+<g id="node7" class="node">
+<title>W1</title>
+<ellipse fill="lightyellow:sandybrown" stroke="black" cx="45" cy="-279" rx="0" ry="0"></ellipse>
+</g>
+<!-- W0&#45;&gt;W1 -->
+<g id="edge2" class="edge">
+<title>W0-&gt;W1</title>
+<path fill="none" stroke="black" d="M45,-377.93C45,-374.98 45,-281.98 45,-279.07"></path>
+</g>
+<!-- W1&#45;&gt;Areas -->
+<g id="edge6" class="edge">
+<title>W1-&gt;Areas</title>
+<path fill="none" stroke="black" d="M45.09,-279C47.34,-279 90.74,-279 125.97,-279"></path>
+</g>
+<!-- W2 -->
+<g id="node8" class="node">
+<title>W2</title>
+<ellipse fill="lightyellow:sandybrown" stroke="black" cx="45" cy="-153" rx="0" ry="0"></ellipse>
+</g>
+<!-- W1&#45;&gt;W2 -->
+<g id="edge3" class="edge">
+<title>W1-&gt;W2</title>
+<path fill="none" stroke="black" d="M45,-278.91C45,-275.15 45,-156.79 45,-153.09"></path>
+</g>
+<!-- W2&#45;&gt;Resources -->
+<g id="edge7" class="edge">
+<title>W2-&gt;Resources</title>
+<path fill="none" stroke="black" d="M45.09,-153C47.34,-153 90.74,-153 125.97,-153"></path>
+</g>
+<!-- W3 -->
+<g id="node9" class="node">
+<title>W3</title>
+<ellipse fill="lightyellow:sandybrown" stroke="black" cx="45" cy="-54" rx="0" ry="0"></ellipse>
+</g>
+<!-- W2&#45;&gt;W3 -->
+<g id="edge4" class="edge">
+<title>W2-&gt;W3</title>
+<path fill="none" stroke="black" d="M45,-152.93C45,-149.98 45,-56.98 45,-54.07"></path>
+</g>
+<!-- W3&#45;&gt;Archives -->
+<g id="edge8" class="edge">
+<title>W3-&gt;Archives</title>
+<path fill="none" stroke="black" d="M45.09,-53.5C47.34,-53.5 90.74,-53.5 125.97,-53.5"></path>
+</g>
+</g>
+</svg>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="a-simple-standard-directory-structure-is-easy-to-organize-1" class="slide level2">
+<h2><span class="small">A simple, standard directory structure is easy to organize</span></h2>
+<h3 id="suggested-usage-2">Suggested Usage</h3>
+<div class="columns">
+<div class="column">
+<ul>
+<li>PARA
+<ul>
+<li>Projects
+<ul>
+<li>Short-term efforts</li>
+</ul></li>
+<li>Areas
+<ul>
+<li>Long-term efforts</li>
+</ul></li>
+<li>Resources
+<ul>
+<li>Topics of interest</li>
+</ul></li>
+<li>Archives
+<ul>
+<li>Inactive items from the other categories</li>
+</ul></li>
+</ul></li>
+</ul>
+</div><div class="column">
+<div class="vscroll">
+<div class="cell" data-fig-height="16.5" data-fig-width="4.5" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class=""><p></p>
+<div>
+<svg width="432" height="1584" viewbox="0.00 0.00 386.00 1448.00" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" style="; max-width: none; max-height: none; display: block; margin: auto auto auto auto">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 1444)">
+<title>PARA</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-1444 382,-1444 382,4 -4,4"></polygon>
+<!-- My Library -->
+<g id="node1" class="node">
+<title>My Library</title>
+<defs>
+<lineargradient id="l_5" gradientunits="userSpaceOnUse" x1="45" y1="-1134" x2="45" y2="-1080">
+<stop offset="0" style="stop-color:sandybrown;stop-opacity:1.;"></stop>
+<stop offset="1" style="stop-color:peru;stop-opacity:1.;"></stop>
+</lineargradient>
+</defs>
+<polygon fill="url(#l_5)" stroke="black" points="90,-1134 4,-1134 0,-1130 0,-1080 86,-1080 90,-1084 90,-1134"></polygon>
+<polyline fill="none" stroke="black" points="86,-1130 0,-1130 "></polyline>
+<polyline fill="none" stroke="black" points="86,-1130 86,-1080 "></polyline>
+<polyline fill="none" stroke="black" points="86,-1130 90,-1134 "></polyline>
+<text text-anchor="middle" x="45" y="-1102.8" font-family="Times,serif" font-size="14.00">My Library</text>
+</g>
+<!-- Projects -->
+<g id="node2" class="node">
+<title>Projects</title>
+<defs>
+<lineargradient id="l_6" gradientunits="userSpaceOnUse" x1="171" y1="-1129" x2="171" y2="-1071">
+<stop offset="0" style="stop-color:lightyellow;stop-opacity:1.;"></stop>
+<stop offset="1" style="stop-color:sandybrown;stop-opacity:1.;"></stop>
+</lineargradient>
+</defs>
+<polygon fill="url(#l_6)" stroke="black" points="216,-1125 213,-1129 192,-1129 189,-1125 126,-1125 126,-1071 216,-1071 216,-1125"></polygon>
+<text text-anchor="middle" x="171" y="-1093.8" font-family="Times,serif" font-size="14.00">Projects</text>
+</g>
+<!-- P2 -->
+<g id="node24" class="node">
+<title>P2</title>
+<ellipse fill="lightyellow:sandybrown" stroke="black" cx="252" cy="-1161" rx="0" ry="0"></ellipse>
+</g>
+<!-- Projects&#45;&gt;P2 -->
+<g id="edge6" class="edge">
+<title>Projects-&gt;P2</title>
+<path fill="none" stroke="black" d="M216.24,-1098C234.79,-1098 252,-1098 252,-1098 252,-1098 252,-1159.05 252,-1160.95"></path>
+</g>
+<!-- Areas -->
+<g id="node3" class="node">
+<title>Areas</title>
+<defs>
+<lineargradient id="l_7" gradientunits="userSpaceOnUse" x1="171" y1="-940" x2="171" y2="-882">
+<stop offset="0" style="stop-color:lightyellow;stop-opacity:1.;"></stop>
+<stop offset="1" style="stop-color:sandybrown;stop-opacity:1.;"></stop>
+</lineargradient>
+</defs>
+<polygon fill="url(#l_7)" stroke="black" points="216,-936 213,-940 192,-940 189,-936 126,-936 126,-882 216,-882 216,-936"></polygon>
+<text text-anchor="middle" x="171" y="-904.8" font-family="Times,serif" font-size="14.00">Areas</text>
+</g>
+<!-- P4 -->
+<g id="node26" class="node">
+<title>P4</title>
+<ellipse fill="lightyellow:sandybrown" stroke="black" cx="252" cy="-909" rx="0" ry="0"></ellipse>
+</g>
+<!-- Areas&#45;&gt;P4 -->
+<g id="edge13" class="edge">
+<title>Areas-&gt;P4</title>
+<path fill="none" stroke="black" d="M216.24,-909C234.21,-909 250.92,-909 251.95,-909"></path>
+</g>
+<!-- Resources -->
+<g id="node4" class="node">
+<title>Resources</title>
+<defs>
+<lineargradient id="l_8" gradientunits="userSpaceOnUse" x1="171" y1="-562" x2="171" y2="-504">
+<stop offset="0" style="stop-color:lightyellow;stop-opacity:1.;"></stop>
+<stop offset="1" style="stop-color:sandybrown;stop-opacity:1.;"></stop>
+</lineargradient>
+</defs>
+<polygon fill="url(#l_8)" stroke="black" points="216,-558 213,-562 192,-562 189,-558 126,-558 126,-504 216,-504 216,-558"></polygon>
+<text text-anchor="middle" x="171" y="-526.8" font-family="Times,serif" font-size="14.00">Resources</text>
+</g>
+<!-- P7 -->
+<g id="node29" class="node">
+<title>P7</title>
+<ellipse fill="lightyellow:sandybrown" stroke="black" cx="252" cy="-531" rx="0" ry="0"></ellipse>
+</g>
+<!-- Resources&#45;&gt;P7 -->
+<g id="edge20" class="edge">
+<title>Resources-&gt;P7</title>
+<path fill="none" stroke="black" d="M216.24,-531C234.21,-531 250.92,-531 251.95,-531"></path>
+</g>
+<!-- Archives -->
+<g id="node5" class="node">
+<title>Archives</title>
+<defs>
+<lineargradient id="l_9" gradientunits="userSpaceOnUse" x1="171" y1="-373" x2="171" y2="-315">
+<stop offset="0" style="stop-color:lightyellow;stop-opacity:1.;"></stop>
+<stop offset="1" style="stop-color:sandybrown;stop-opacity:1.;"></stop>
+</lineargradient>
+</defs>
+<polygon fill="url(#l_9)" stroke="black" points="216,-369 213,-373 192,-373 189,-369 126,-369 126,-315 216,-315 216,-369"></polygon>
+<text text-anchor="middle" x="171" y="-337.8" font-family="Times,serif" font-size="14.00">Archives</text>
+</g>
+<!-- P9 -->
+<g id="node31" class="node">
+<title>P9</title>
+<ellipse fill="lightyellow:sandybrown" stroke="black" cx="252" cy="-279" rx="0" ry="0"></ellipse>
+</g>
+<!-- Archives&#45;&gt;P9 -->
+<g id="edge27" class="edge">
+<title>Archives-&gt;P9</title>
+<path fill="none" stroke="black" d="M216.24,-342C234.79,-342 252,-342 252,-342 252,-342 252,-280.95 252,-279.05"></path>
+</g>
+<!-- QE -->
+<g id="node6" class="node">
+<title>QE</title>
+<defs>
+<lineargradient id="l_10" gradientunits="userSpaceOnUse" x1="333" y1="-1444" x2="333" y2="-1386">
+<stop offset="0" style="stop-color:lightyellow;stop-opacity:1.;"></stop>
+<stop offset="1" style="stop-color:sandybrown;stop-opacity:1.;"></stop>
+</lineargradient>
+</defs>
+<polygon fill="url(#l_10)" stroke="black" points="378,-1440 375,-1444 354,-1444 351,-1440 288,-1440 288,-1386 378,-1386 378,-1440"></polygon>
+<text text-anchor="middle" x="333" y="-1408.8" font-family="Times,serif" font-size="14.00">QE</text>
+</g>
+<!-- Dissertation -->
+<g id="node7" class="node">
+<title>Dissertation</title>
+<defs>
+<lineargradient id="l_11" gradientunits="userSpaceOnUse" x1="333" y1="-1318" x2="333" y2="-1260">
+<stop offset="0" style="stop-color:lightyellow;stop-opacity:1.;"></stop>
+<stop offset="1" style="stop-color:sandybrown;stop-opacity:1.;"></stop>
+</lineargradient>
+</defs>
+<polygon fill="url(#l_11)" stroke="black" points="378,-1314 375,-1318 354,-1318 351,-1314 288,-1314 288,-1260 378,-1260 378,-1314"></polygon>
+<text text-anchor="middle" x="333" y="-1282.8" font-family="Times,serif" font-size="14.00">Dissertation</text>
+</g>
+<!-- Review\nPaper -->
+<g id="node8" class="node">
+<title>Review\nPaper</title>
+<defs>
+<lineargradient id="l_12" gradientunits="userSpaceOnUse" x1="333" y1="-1192" x2="333" y2="-1134">
+<stop offset="0" style="stop-color:lightyellow;stop-opacity:1.;"></stop>
+<stop offset="1" style="stop-color:sandybrown;stop-opacity:1.;"></stop>
+</lineargradient>
+</defs>
+<polygon fill="url(#l_12)" stroke="black" points="378,-1188 375,-1192 354,-1192 351,-1188 288,-1188 288,-1134 378,-1134 378,-1188"></polygon>
+<text text-anchor="middle" x="333" y="-1165.2" font-family="Times,serif" font-size="14.00">Review</text>
+<text text-anchor="middle" x="333" y="-1148.4" font-family="Times,serif" font-size="14.00">Paper</text>
+</g>
+<!-- Writing -->
+<g id="node9" class="node">
+<title>Writing</title>
+<defs>
+<lineargradient id="l_13" gradientunits="userSpaceOnUse" x1="333" y1="-1066" x2="333" y2="-1008">
+<stop offset="0" style="stop-color:lightyellow;stop-opacity:1.;"></stop>
+<stop offset="1" style="stop-color:sandybrown;stop-opacity:1.;"></stop>
+</lineargradient>
+</defs>
+<polygon fill="url(#l_13)" stroke="black" points="378,-1062 375,-1066 354,-1066 351,-1062 288,-1062 288,-1008 378,-1008 378,-1062"></polygon>
+<text text-anchor="middle" x="333" y="-1030.8" font-family="Times,serif" font-size="14.00">Writing</text>
+</g>
+<!-- Teaching -->
+<g id="node10" class="node">
+<title>Teaching</title>
+<defs>
+<lineargradient id="l_14" gradientunits="userSpaceOnUse" x1="333" y1="-940" x2="333" y2="-882">
+<stop offset="0" style="stop-color:lightyellow;stop-opacity:1.;"></stop>
+<stop offset="1" style="stop-color:sandybrown;stop-opacity:1.;"></stop>
+</lineargradient>
+</defs>
+<polygon fill="url(#l_14)" stroke="black" points="378,-936 375,-940 354,-940 351,-936 288,-936 288,-882 378,-882 378,-936"></polygon>
+<text text-anchor="middle" x="333" y="-904.8" font-family="Times,serif" font-size="14.00">Teaching</text>
+</g>
+<!-- Broader\nImpacts -->
+<g id="node11" class="node">
+<title>Broader\nImpacts</title>
+<defs>
+<lineargradient id="l_15" gradientunits="userSpaceOnUse" x1="333" y1="-814" x2="333" y2="-756">
+<stop offset="0" style="stop-color:lightyellow;stop-opacity:1.;"></stop>
+<stop offset="1" style="stop-color:sandybrown;stop-opacity:1.;"></stop>
+</lineargradient>
+</defs>
+<polygon fill="url(#l_15)" stroke="black" points="378,-810 375,-814 354,-814 351,-810 288,-810 288,-756 378,-756 378,-810"></polygon>
+<text text-anchor="middle" x="333" y="-787.2" font-family="Times,serif" font-size="14.00">Broader</text>
+<text text-anchor="middle" x="333" y="-770.4" font-family="Times,serif" font-size="14.00">Impacts</text>
+</g>
+<!-- Dry\nLab -->
+<g id="node12" class="node">
+<title>Dry\nLab</title>
+<defs>
+<lineargradient id="l_16" gradientunits="userSpaceOnUse" x1="333" y1="-688" x2="333" y2="-630">
+<stop offset="0" style="stop-color:lightyellow;stop-opacity:1.;"></stop>
+<stop offset="1" style="stop-color:sandybrown;stop-opacity:1.;"></stop>
+</lineargradient>
+</defs>
+<polygon fill="url(#l_16)" stroke="black" points="378,-684 375,-688 354,-688 351,-684 288,-684 288,-630 378,-630 378,-684"></polygon>
+<text text-anchor="middle" x="333" y="-661.2" font-family="Times,serif" font-size="14.00">Dry</text>
+<text text-anchor="middle" x="333" y="-644.4" font-family="Times,serif" font-size="14.00">Lab</text>
+</g>
+<!-- Wet\nLab -->
+<g id="node13" class="node">
+<title>Wet\nLab</title>
+<defs>
+<lineargradient id="l_17" gradientunits="userSpaceOnUse" x1="333" y1="-562" x2="333" y2="-504">
+<stop offset="0" style="stop-color:lightyellow;stop-opacity:1.;"></stop>
+<stop offset="1" style="stop-color:sandybrown;stop-opacity:1.;"></stop>
+</lineargradient>
+</defs>
+<polygon fill="url(#l_17)" stroke="black" points="378,-558 375,-562 354,-562 351,-558 288,-558 288,-504 378,-504 378,-558"></polygon>
+<text text-anchor="middle" x="333" y="-535.2" font-family="Times,serif" font-size="14.00">Wet</text>
+<text text-anchor="middle" x="333" y="-518.4" font-family="Times,serif" font-size="14.00">Lab</text>
+</g>
+<!-- Learning -->
+<g id="node14" class="node">
+<title>Learning</title>
+<defs>
+<lineargradient id="l_18" gradientunits="userSpaceOnUse" x1="333" y1="-436" x2="333" y2="-378">
+<stop offset="0" style="stop-color:lightyellow;stop-opacity:1.;"></stop>
+<stop offset="1" style="stop-color:sandybrown;stop-opacity:1.;"></stop>
+</lineargradient>
+</defs>
+<polygon fill="url(#l_18)" stroke="black" points="378,-432 375,-436 354,-436 351,-432 288,-432 288,-378 378,-378 378,-432"></polygon>
+<text text-anchor="middle" x="333" y="-400.8" font-family="Times,serif" font-size="14.00">Learning</text>
+</g>
+<!-- Completed\nProjects -->
+<g id="node15" class="node">
+<title>Completed\nProjects</title>
+<defs>
+<lineargradient id="l_19" gradientunits="userSpaceOnUse" x1="333" y1="-310" x2="333" y2="-252">
+<stop offset="0" style="stop-color:lightyellow;stop-opacity:1.;"></stop>
+<stop offset="1" style="stop-color:sandybrown;stop-opacity:1.;"></stop>
+</lineargradient>
+</defs>
+<polygon fill="url(#l_19)" stroke="black" points="378,-306 375,-310 354,-310 351,-306 288,-306 288,-252 378,-252 378,-306"></polygon>
+<text text-anchor="middle" x="333" y="-283.2" font-family="Times,serif" font-size="14.00">Completed</text>
+<text text-anchor="middle" x="333" y="-266.4" font-family="Times,serif" font-size="14.00">Projects</text>
+</g>
+<!-- Inactive\nAreas -->
+<g id="node16" class="node">
+<title>Inactive\nAreas</title>
+<defs>
+<lineargradient id="l_20" gradientunits="userSpaceOnUse" x1="333" y1="-184" x2="333" y2="-126">
+<stop offset="0" style="stop-color:lightyellow;stop-opacity:1.;"></stop>
+<stop offset="1" style="stop-color:sandybrown;stop-opacity:1.;"></stop>
+</lineargradient>
+</defs>
+<polygon fill="url(#l_20)" stroke="black" points="378,-180 375,-184 354,-184 351,-180 288,-180 288,-126 378,-126 378,-180"></polygon>
+<text text-anchor="middle" x="333" y="-157.2" font-family="Times,serif" font-size="14.00">Inactive</text>
+<text text-anchor="middle" x="333" y="-140.4" font-family="Times,serif" font-size="14.00">Areas</text>
+</g>
+<!-- Irrelevant\nResources -->
+<g id="node17" class="node">
+<title>Irrelevant\nResources</title>
+<defs>
+<lineargradient id="l_21" gradientunits="userSpaceOnUse" x1="333" y1="-58" x2="333" y2="0">
+<stop offset="0" style="stop-color:lightyellow;stop-opacity:1.;"></stop>
+<stop offset="1" style="stop-color:sandybrown;stop-opacity:1.;"></stop>
+</lineargradient>
+</defs>
+<polygon fill="url(#l_21)" stroke="black" points="378,-54 375,-58 354,-58 351,-54 288,-54 288,0 378,0 378,-54"></polygon>
+<text text-anchor="middle" x="333" y="-31.2" font-family="Times,serif" font-size="14.00">Irrelevant</text>
+<text text-anchor="middle" x="333" y="-14.4" font-family="Times,serif" font-size="14.00">Resources</text>
+</g>
+<!-- W0 -->
+<g id="node18" class="node">
+<title>W0</title>
+<ellipse fill="lightyellow:sandybrown" stroke="black" cx="45" cy="-1008" rx="0" ry="0"></ellipse>
+</g>
+<!-- W0&#45;&gt;My Library -->
+<g id="edge1" class="edge">
+<title>W0-&gt;My Library</title>
+<path fill="none" stroke="black" d="M45,-1008.07C45,-1010.02 45,-1051.28 45,-1079.89"></path>
+</g>
+<!-- W0&#45;&gt;Projects -->
+<g id="edge5" class="edge">
+<title>W0-&gt;Projects</title>
+<path fill="none" stroke="black" d="M45.09,-1008C48.91,-1008 171,-1008 171,-1008 171,-1008 171,-1044.49 171,-1071"></path>
+</g>
+<!-- W1 -->
+<g id="node19" class="node">
+<title>W1</title>
+<ellipse fill="lightyellow:sandybrown" stroke="black" cx="45" cy="-909" rx="0" ry="0"></ellipse>
+</g>
+<!-- W0&#45;&gt;W1 -->
+<g id="edge2" class="edge">
+<title>W0-&gt;W1</title>
+<path fill="none" stroke="black" d="M45,-1007.93C45,-1004.98 45,-911.98 45,-909.07"></path>
+</g>
+<!-- W1&#45;&gt;Areas -->
+<g id="edge12" class="edge">
+<title>W1-&gt;Areas</title>
+<path fill="none" stroke="black" d="M45.09,-909C47.34,-909 90.74,-909 125.97,-909"></path>
+</g>
+<!-- W2 -->
+<g id="node20" class="node">
+<title>W2</title>
+<ellipse fill="lightyellow:sandybrown" stroke="black" cx="45" cy="-531" rx="0" ry="0"></ellipse>
+</g>
+<!-- W1&#45;&gt;W2 -->
+<g id="edge3" class="edge">
+<title>W1-&gt;W2</title>
+<path fill="none" stroke="black" d="M45,-908.93C45,-903.16 45,-536.79 45,-531.07"></path>
+</g>
+<!-- W2&#45;&gt;Resources -->
+<g id="edge19" class="edge">
+<title>W2-&gt;Resources</title>
+<path fill="none" stroke="black" d="M45.09,-531C47.34,-531 90.74,-531 125.97,-531"></path>
+</g>
+<!-- W3 -->
+<g id="node21" class="node">
+<title>W3</title>
+<ellipse fill="lightyellow:sandybrown" stroke="black" cx="45" cy="-432" rx="0" ry="0"></ellipse>
+</g>
+<!-- W2&#45;&gt;W3 -->
+<g id="edge4" class="edge">
+<title>W2-&gt;W3</title>
+<path fill="none" stroke="black" d="M45,-530.93C45,-527.98 45,-434.98 45,-432.07"></path>
+</g>
+<!-- W3&#45;&gt;Archives -->
+<g id="edge26" class="edge">
+<title>W3-&gt;Archives</title>
+<path fill="none" stroke="black" d="M45,-431.93C45,-429.21 45,-342 45,-342 45,-342 89.71,-342 125.87,-342"></path>
+</g>
+<!-- P0 -->
+<g id="node22" class="node">
+<title>P0</title>
+<ellipse fill="lightyellow:sandybrown" stroke="black" cx="252" cy="-1386" rx="0" ry="0"></ellipse>
+</g>
+<!-- P0&#45;&gt;QE -->
+<g id="edge9" class="edge">
+<title>P0-&gt;QE</title>
+<path fill="none" stroke="black" d="M252.06,-1386.5C253.17,-1386.5 269.89,-1386.5 287.85,-1386.5"></path>
+</g>
+<!-- P1 -->
+<g id="node23" class="node">
+<title>P1</title>
+<ellipse fill="lightyellow:sandybrown" stroke="black" cx="252" cy="-1287" rx="0" ry="0"></ellipse>
+</g>
+<!-- P0&#45;&gt;P1 -->
+<g id="edge7" class="edge">
+<title>P0-&gt;P1</title>
+<path fill="none" stroke="black" d="M252,-1385.93C252,-1382.98 252,-1289.98 252,-1287.07"></path>
+</g>
+<!-- P1&#45;&gt;Dissertation -->
+<g id="edge10" class="edge">
+<title>P1-&gt;Dissertation</title>
+<path fill="none" stroke="black" d="M252.06,-1287C253.17,-1287 269.89,-1287 287.85,-1287"></path>
+</g>
+<!-- P1&#45;&gt;P2 -->
+<g id="edge8" class="edge">
+<title>P1-&gt;P2</title>
+<path fill="none" stroke="black" d="M252,-1286.91C252,-1283.15 252,-1164.79 252,-1161.09"></path>
+</g>
+<!-- P2&#45;&gt;Review\nPaper -->
+<g id="edge11" class="edge">
+<title>P2-&gt;Review\nPaper</title>
+<path fill="none" stroke="black" d="M252.06,-1161C253.17,-1161 269.89,-1161 287.85,-1161"></path>
+</g>
+<!-- P3 -->
+<g id="node25" class="node">
+<title>P3</title>
+<ellipse fill="lightyellow:sandybrown" stroke="black" cx="252" cy="-1008" rx="0" ry="0"></ellipse>
+</g>
+<!-- P3&#45;&gt;Writing -->
+<g id="edge16" class="edge">
+<title>P3-&gt;Writing</title>
+<path fill="none" stroke="black" d="M252.06,-1008.5C253.17,-1008.5 269.89,-1008.5 287.85,-1008.5"></path>
+</g>
+<!-- P3&#45;&gt;P4 -->
+<g id="edge14" class="edge">
+<title>P3-&gt;P4</title>
+<path fill="none" stroke="black" d="M252,-1007.93C252,-1004.98 252,-911.98 252,-909.07"></path>
+</g>
+<!-- P4&#45;&gt;Teaching -->
+<g id="edge17" class="edge">
+<title>P4-&gt;Teaching</title>
+<path fill="none" stroke="black" d="M252.06,-909C253.17,-909 269.89,-909 287.85,-909"></path>
+</g>
+<!-- P5 -->
+<g id="node27" class="node">
+<title>P5</title>
+<ellipse fill="lightyellow:sandybrown" stroke="black" cx="252" cy="-810" rx="0" ry="0"></ellipse>
+</g>
+<!-- P4&#45;&gt;P5 -->
+<g id="edge15" class="edge">
+<title>P4-&gt;P5</title>
+<path fill="none" stroke="black" d="M252,-908.93C252,-905.98 252,-812.98 252,-810.07"></path>
+</g>
+<!-- P5&#45;&gt;Broader\nImpacts -->
+<g id="edge18" class="edge">
+<title>P5-&gt;Broader\nImpacts</title>
+<path fill="none" stroke="black" d="M252.06,-809.5C253.17,-809.5 269.89,-809.5 287.85,-809.5"></path>
+</g>
+<!-- P6 -->
+<g id="node28" class="node">
+<title>P6</title>
+<ellipse fill="lightyellow:sandybrown" stroke="black" cx="252" cy="-630" rx="0" ry="0"></ellipse>
+</g>
+<!-- P6&#45;&gt;Dry\nLab -->
+<g id="edge23" class="edge">
+<title>P6-&gt;Dry\nLab</title>
+<path fill="none" stroke="black" d="M252.06,-630.5C253.17,-630.5 269.89,-630.5 287.85,-630.5"></path>
+</g>
+<!-- P6&#45;&gt;P7 -->
+<g id="edge21" class="edge">
+<title>P6-&gt;P7</title>
+<path fill="none" stroke="black" d="M252,-629.93C252,-626.98 252,-533.98 252,-531.07"></path>
+</g>
+<!-- P7&#45;&gt;Wet\nLab -->
+<g id="edge24" class="edge">
+<title>P7-&gt;Wet\nLab</title>
+<path fill="none" stroke="black" d="M252.06,-531C253.17,-531 269.89,-531 287.85,-531"></path>
+</g>
+<!-- P8 -->
+<g id="node30" class="node">
+<title>P8</title>
+<ellipse fill="lightyellow:sandybrown" stroke="black" cx="252" cy="-432" rx="0" ry="0"></ellipse>
+</g>
+<!-- P7&#45;&gt;P8 -->
+<g id="edge22" class="edge">
+<title>P7-&gt;P8</title>
+<path fill="none" stroke="black" d="M252,-530.93C252,-527.98 252,-434.98 252,-432.07"></path>
+</g>
+<!-- P8&#45;&gt;Learning -->
+<g id="edge25" class="edge">
+<title>P8-&gt;Learning</title>
+<path fill="none" stroke="black" d="M252.06,-431.5C253.17,-431.5 269.89,-431.5 287.85,-431.5"></path>
+</g>
+<!-- P9&#45;&gt;Completed\nProjects -->
+<g id="edge30" class="edge">
+<title>P9-&gt;Completed\nProjects</title>
+<path fill="none" stroke="black" d="M252.06,-279C253.17,-279 269.89,-279 287.85,-279"></path>
+</g>
+<!-- P10 -->
+<g id="node32" class="node">
+<title>P10</title>
+<ellipse fill="lightyellow:sandybrown" stroke="black" cx="252" cy="-153" rx="0" ry="0"></ellipse>
+</g>
+<!-- P9&#45;&gt;P10 -->
+<g id="edge28" class="edge">
+<title>P9-&gt;P10</title>
+<path fill="none" stroke="black" d="M252,-278.91C252,-275.15 252,-156.79 252,-153.09"></path>
+</g>
+<!-- P10&#45;&gt;Inactive\nAreas -->
+<g id="edge31" class="edge">
+<title>P10-&gt;Inactive\nAreas</title>
+<path fill="none" stroke="black" d="M252.06,-153C253.17,-153 269.89,-153 287.85,-153"></path>
+</g>
+<!-- P11 -->
+<g id="node33" class="node">
+<title>P11</title>
+<ellipse fill="lightyellow:sandybrown" stroke="black" cx="252" cy="-54" rx="0" ry="0"></ellipse>
+</g>
+<!-- P10&#45;&gt;P11 -->
+<g id="edge29" class="edge">
+<title>P10-&gt;P11</title>
+<path fill="none" stroke="black" d="M252,-152.93C252,-149.98 252,-56.98 252,-54.07"></path>
+</g>
+<!-- P11&#45;&gt;Irrelevant\nResources -->
+<g id="edge32" class="edge">
+<title>P11-&gt;Irrelevant\nResources</title>
+<path fill="none" stroke="black" d="M252.06,-53.5C253.17,-53.5 269.89,-53.5 287.85,-53.5"></path>
+</g>
+<!-- W4 -->
+<g id="node34" class="node">
+<title>W4</title>
+<ellipse fill="lightyellow:sandybrown" stroke="black" cx="45" cy="-1206" rx="0" ry="0"></ellipse>
+</g>
+<!-- W5 -->
+<g id="node35" class="node">
+<title>W5</title>
+<ellipse fill="lightyellow:sandybrown" stroke="black" cx="45" cy="-1278" rx="0" ry="0"></ellipse>
+</g>
+<!-- W6 -->
+<g id="node36" class="node">
+<title>W6</title>
+<ellipse fill="lightyellow:sandybrown" stroke="black" cx="45" cy="-1350" rx="0" ry="0"></ellipse>
+</g>
+</g>
+</svg>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="many-avenues-are-available-for-finding-you-documents" class="slide level2">
+<h2><span class="small">Many avenues are available for finding you documents</span></h2>
+<h3 id="suggested-usage-3">Suggested Usage</h3>
+<p>To gather attachments:</p>
+<div class="columns">
+<div class="column" style="width:60%;">
+<ul>
+<li class="fragment">Base Zotero
+<ul>
+<li class="fragment">unpaywall</li>
+<li class="fragment">retraction watch</li>
+</ul></li>
+<li class="fragment">Zotero Connector
+<ul>
+<li class="fragment">Database query <span class="arrow">🢖</span> Click <span class="emoji" data-emoji="file_folder">📁</span></li>
+<li class="fragment">Load article or webpage <span class="arrow">🢖</span> Click item icon</li>
+</ul></li>
+</ul>
+</div><div class="column" style="width:40%;">
+<ul>
+<li class="fragment">Addons
+<ul>
+<li class="fragment"><a href="https://github.com/ethanwillis/zotero-scihub">SciHub</a></li>
+<li class="fragment"><a href="https://github.com/ethanwillis/zotero-scihub/issues/96#issuecomment-1758310741">This issue</a> for <a href="https://github.com/windingwind/zotero-actions-tags/discussions/124">Action tags</a> (<a href="https://github.com/zotero/zotero/milestone/9">requires Z7</a>)</li>
+</ul></li>
+<li class="fragment">External
+<ul>
+<li class="fragment"><a href="https://archive.ph/">archive.today</a></li>
+</ul></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="including-headers-can-increase-organization" class="slide level2">
+<h2>Including headers can increase organization</h2>
+<h3 id="suggested-usage-4">Suggested Usage</h3>
+<div class="columns">
+<div class="column">
+<p>Including the <code>Notes</code> column for quick reference:</p>
+<ul>
+<li class="fragment">Right-click column headers in any collection</li>
+<li class="fragment">Check <code>Notes</code></li>
+</ul>
+</div><div class="column">
+<p>Quick example of note taking and importing into text editor:</p>
+<ul>
+<li class="fragment">Open pdf in Zotero</li>
+<li class="fragment">Create annotations (<code>Alt+1</code> &amp; <code>Alt+3</code>)</li>
+<li class="fragment">Right-click item and <code>Add Note from Annotations</code></li>
+<li class="fragment">Open text editor</li>
+<li class="fragment">Import note</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="tags-are-incredible-for-organizing-with-visual-aids" class="slide level2">
+<h2><span class="small">Tags are incredible for organizing with visual aids!</span></h2>
+<h3 id="suggested-usage-5">Suggested Usage</h3>
+<p>Use tags to mark all read and unread items:</p>
+<ol type="1">
+<li class="fragment">Add <span class="emoji" data-emoji="o">⭕</span> to an item in the <code>Tags</code> panel.</li>
+<li class="fragment">In the lower left panel, right click the tag <span class="arrow">🢖</span> <code>Assign Color...</code></li>
+<li class="fragment">Select a color and <code>Set color</code></li>
+<li class="fragment">Select all items and drop into the tag</li>
+</ol>
+<p>For automatic tagging, install the <a href="https://github.com/windingwind/zotero-actions-tags">Actions and Tags</a> addon</p>
+</section>
+<section id="for-increased-resolution-create-a-folksonomy-a-thesaurus-of-tags" class="slide level2">
+<h2><span style="font-size: 0.70em;">For increased resolution create a <strong><em>Folksonomy</em></strong>, a thesaurus of tags</span></h2>
+<h3 id="suggested-usage-6">Suggested Usage</h3>
+<div class="columns">
+<div class="column">
+<p>Why?</p>
+<ul>
+<li class="fragment">Individuals or groups will quickly find and re-find sources</li>
+<li class="fragment">Metadata is shared in groups
+<ul>
+<li class="fragment">Offers guidance to beginners</li>
+</ul></li>
+</ul>
+</div><div class="column">
+<p>How?</p>
+<ul>
+<li class="fragment">Think and create some keywords that capture the text contents</li>
+<li class="fragment">Skim abstracts and papers for keywords</li>
+<li class="fragment">Use bibliometrics or LLMs:
+<ul>
+<li class="fragment"><span class="small"><code>Create a folksonomy, or a thesaurus of tags, for [topics] studies.</code></span></li>
+</ul></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="auto-curate-your-library-through-saved-searches" class="slide level2">
+<h2><span class="small">Auto-Curate your library through saved searches</span></h2>
+<h3 id="suggested-usage-7">Suggested Usage</h3>
+<aside class="notes">
+<p>A final organizational tool within Zotero is the saved searched. By creating curated searches new items will auto populate by well-defined rules set by the user. These saved searches allow a user to find the new items in both their Unfiled collection and their saved searches. All to allow the user more focused options when beginning their reading or writing tasks.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+<ul>
+<li class="fragment">Start an advanced search:
+<ul>
+<li class="fragment">Click the <span class="emoji" data-emoji="mag">🔍</span></li>
+<li class="fragment">Click <code>Edit</code> <span class="arrow">🢖</span> <code>Advanced Search</code></li>
+<li class="fragment"><code>Ctrl+Shift+F</code></li>
+</ul></li>
+<li class="fragment">Define an area of continued interest</li>
+<li class="fragment">Using keywords in <code>All fields</code>, rapidly tag groups of items</li>
+</ul>
+</section>
+<section id="citing-and-bibliographies-are-simplified" class="slide level2">
+<h2>Citing and bibliographies are simplified</h2>
+<h3 id="suggested-usage-8">Suggested Usage</h3>
+<aside class="notes">
+<p>Paste the citations: <code>Ctrl+Shift+C</code> a Zotero item/s you have selected <span class="arrow">🢖</span> <code>Ctrl+v</code> in text editor</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+<div class="small">
+<ul>
+<li class="fragment">Google Docs for collabratory documents
+<ul>
+<li class="fragment">Open google doc: Open a google doc in the google drive you would like to sync to your Zotero library.</li>
+<li class="fragment">Link account: Integrate your google account with Zotero by clicking <code>Z</code> in the toolbar.
+<ul>
+<li class="fragment">Authenticate the Google account used to edit the document</li>
+</ul></li>
+</ul></li>
+<li class="fragment">Microsoft Word for local documents
+<ul>
+<li class="fragment">Open Word Doc: Open a word document…</li>
+<li class="fragment">Done?: There is now a Zotero tab in you document linked to your library!</li>
+</ul></li>
+<li class="fragment">Libre Office for local documents
+<ul>
+<li class="fragment">Open Libre Writer: Open a writer document…</li>
+<li class="fragment">Done?: There is now a Zotero toolbar in you document linked to your library!</li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section id="extend-your-capabilities-with-addons-and-external-tools" class="slide level2">
+<h2><span class="small">Extend your capabilities with addons and external tools</span></h2>
+<h3 id="suggested-usage-9">Suggested Usage</h3>
+<div class="smaller">
+<p>Additional addons:</p>
+<ul>
+<li><a href="https://github.com/MuiseDestiny/zotero-style#readme">Style</a></li>
+<li><a href="https://github.com/MuiseDestiny/zotero-reference">References</a></li>
+<li><a href="https://github.com/scitedotai/scite-zotero-plugin">Scite</a></li>
+<li><a href="https://github.com/bwiernik/zotero-shortdoi">DOI Manager</a></li>
+<li><a href="https://github.com/windingwind/zotero-better-notes#readme">Better Notes</a></li>
+<li><a href="https://github.com/windingwind/zotero-pdf-translate#readme">Translate</a></li>
+</ul>
+<p>Integrated external tools:</p>
+<ul>
+<li><a href="https://www.researchrabbit.ai/">Research Rabbit</a></li>
+<li><a href="https://forums.zotero.org/discussion/102320/the-possibility-of-integrating-ai-into-zotero-to-assist-reading/p1">An AI Assistant?</a></li>
+</ul>
+<p>External tools:</p>
+<ul>
+<li>semantic scholar</li>
+<li>connected papers</li>
+<li>elicit</li>
+<li>chat gpt</li>
+</ul>
+</div>
+</section></section>
+<section>
+<section id="summary" class="title-slide slide level1 center">
+<h1>Summary</h1>
+
+</section>
+<section id="acknowledgments" class="slide level2">
+<h2>Acknowledgments</h2>
+<h3 id="i-have-always-imagined-that-paradise-will-be-a-kind-of-library.-jorge-luis-borges">“I have always imagined that Paradise will be a kind of library.”<br>Jorge Luis Borges</h3>
+<div>
+<ul>
+<li>C. Titus Brown</li>
+<li>Pamela Reynolds</li>
+<li>Bryshal Moore</li>
+<li>Luiz Irber</li>
+<li>DIB Lab members</li>
+<li>DataLab members</li>
+</ul>
+</div>
+<div class="quarto-auto-generated-content">
+<div class="footer footer-default">
+
+</div>
+</div>
+</section></section>
+    </div>
+  </div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="prez-keeping-organized_files/libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="prez-keeping-organized_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="prez-keeping-organized_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="prez-keeping-organized_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="prez-keeping-organized_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="prez-keeping-organized_files/libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
+  <script src="prez-keeping-organized_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="prez-keeping-organized_files/libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="prez-keeping-organized_files/libs/revealjs/plugin/search/search.js"></script>
+  <script src="prez-keeping-organized_files/libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="prez-keeping-organized_files/libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': true,
+'previewLinksAuto': false,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease-in-out",
+'autoAnimateDuration': 0.8,
+'autoAnimateUnmatched': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleChalkboard(event)\"><kbd>b</kbd> Toggle Chalkboard</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleNotesCanvas(event)\"><kbd>c</kbd> Toggle Notes Canvas</a></li>\n<li class=\"slide-tool-item\" data-item=\"6\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.downloadDrawings(event)\"><kbd>d</kbd> Download Drawings</a></li>\n<li class=\"slide-tool-item\" data-item=\"7\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'chalkboard': {"buttons":false},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: false,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: false,
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'none',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1050,
+
+        height: 700,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        math: {
+          mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealChalkboard, QuartoSupport,
+
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
+    <script id="quarto-html-after-body" type="application/javascript">
+    window.document.addEventListener("DOMContentLoaded", function (event) {
+      const toggleBodyColorMode = (bsSheetEl) => {
+        const mode = bsSheetEl.getAttribute("data-mode");
+        const bodyEl = window.document.querySelector("body");
+        if (mode === "dark") {
+          bodyEl.classList.add("quarto-dark");
+          bodyEl.classList.remove("quarto-light");
+        } else {
+          bodyEl.classList.add("quarto-light");
+          bodyEl.classList.remove("quarto-dark");
+        }
+      }
+      const toggleBodyColorPrimary = () => {
+        const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+        if (bsSheetEl) {
+          toggleBodyColorMode(bsSheetEl);
+        }
+      }
+      toggleBodyColorPrimary();  
+      const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+      tabsets.forEach(function(tabset) {
+        const tabby = new Tabby('#' + tabset.id);
+      });
+      const isCodeAnnotation = (el) => {
+        for (const clz of el.classList) {
+          if (clz.startsWith('code-annotation-')) {                     
+            return true;
+          }
+        }
+        return false;
+      }
+      const clipboard = new window.ClipboardJS('.code-copy-button', {
+        text: function(trigger) {
+          const codeEl = trigger.previousElementSibling.cloneNode(true);
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+        }
+      });
+      clipboard.on('success', function(e) {
+        // button target
+        const button = e.trigger;
+        // don't keep focus
+        button.blur();
+        // flash "checked"
+        button.classList.add('code-copy-button-checked');
+        var currentTitle = button.getAttribute("title");
+        button.setAttribute("title", "Copied!");
+        let tooltip;
+        if (window.bootstrap) {
+          button.setAttribute("data-bs-toggle", "tooltip");
+          button.setAttribute("data-bs-placement", "left");
+          button.setAttribute("data-bs-title", "Copied!");
+          tooltip = new bootstrap.Tooltip(button, 
+            { trigger: "manual", 
+              customClass: "code-copy-button-tooltip",
+              offset: [0, -8]});
+          tooltip.show();    
+        }
+        setTimeout(function() {
+          if (tooltip) {
+            tooltip.hide();
+            button.removeAttribute("data-bs-title");
+            button.removeAttribute("data-bs-toggle");
+            button.removeAttribute("data-bs-placement");
+          }
+          button.setAttribute("title", currentTitle);
+          button.classList.remove('code-copy-button-checked');
+        }, 1000);
+        // clear code selection
+        e.clearSelection();
+      });
+        var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+        var mailtoRegex = new RegExp(/^mailto:/);
+          var filterRegex = new RegExp('/' + window.location.host + '/');
+        var isInternal = (href) => {
+            return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+        }
+        // Inspect non-navigation links and adorn them if external
+     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+        for (var i=0; i<links.length; i++) {
+          const link = links[i];
+          if (!isInternal(link.href)) {
+            // undo the damage that might have been done by quarto-nav.js in the case of
+            // links that we want to consider external
+            if (link.dataset.originalHref !== undefined) {
+              link.href = link.dataset.originalHref;
+            }
+          }
+        }
+      function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+        const config = {
+          allowHTML: true,
+          maxWidth: 500,
+          delay: 100,
+          arrow: false,
+          appendTo: function(el) {
+              return el.closest('section.slide') || el.parentElement;
+          },
+          interactive: true,
+          interactiveBorder: 10,
+          theme: 'light-border',
+          placement: 'bottom-start',
+        };
+        if (contentFn) {
+          config.content = contentFn;
+        }
+        if (onTriggerFn) {
+          config.onTrigger = onTriggerFn;
+        }
+        if (onUntriggerFn) {
+          config.onUntrigger = onUntriggerFn;
+        }
+          config['offset'] = [0,0];
+          config['maxWidth'] = 700;
+        window.tippy(el, config); 
+      }
+      const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+      for (var i=0; i<noterefs.length; i++) {
+        const ref = noterefs[i];
+        tippyHover(ref, function() {
+          // use id or data attribute instead here
+          let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+          try { href = new URL(href).hash; } catch {}
+          const id = href.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note) {
+            return note.innerHTML;
+          } else {
+            return "";
+          }
+        });
+      }
+      const findCites = (el) => {
+        const parentEl = el.parentElement;
+        if (parentEl) {
+          const cites = parentEl.dataset.cites;
+          if (cites) {
+            return {
+              el,
+              cites: cites.split(' ')
+            };
+          } else {
+            return findCites(el.parentElement)
+          }
+        } else {
+          return undefined;
+        }
+      };
+      var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+      for (var i=0; i<bibliorefs.length; i++) {
+        const ref = bibliorefs[i];
+        const citeInfo = findCites(ref);
+        if (citeInfo) {
+          tippyHover(citeInfo.el, function() {
+            var popup = window.document.createElement('div');
+            citeInfo.cites.forEach(function(cite) {
+              var citeDiv = window.document.createElement('div');
+              citeDiv.classList.add('hanging-indent');
+              citeDiv.classList.add('csl-entry');
+              var biblioDiv = window.document.getElementById('ref-' + cite);
+              if (biblioDiv) {
+                citeDiv.innerHTML = biblioDiv.innerHTML;
+              }
+              popup.appendChild(citeDiv);
+            });
+            return popup.innerHTML;
+          });
+        }
+      }
+    });
+    </script>
+    
+
+</body></html>
