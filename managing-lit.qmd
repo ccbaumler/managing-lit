@@ -1,0 +1,698 @@
+---
+title: "Putting the Articles in Their Place!"
+subtitle: "Organize Scientific Literature with Reference Management Software"
+format: 
+  revealjs:
+    theme: custom-dark.scss
+    css: timer.css
+    preview-links: false
+    incremental: true
+    chalkboard: 
+      buttons: false
+    auto-animate-easing: ease-in-out
+    auto-animate-unmatched: true
+    auto-animate-duration: 0.8
+from: markdown+emoji
+author: 
+  - name: Colton Baumler
+    orcid: 0000-0002-5926-7792
+    email: ccbaumler@ucdavis.edu
+    affiliations: University of California, Davis
+  - name: Bryshal Moore
+    email: brymoore@ucdavis.edu
+    affiliations: University of California, Davis
+date: last-modified
+date-format: "dddd, [the] D[<sup style='font-size:65%;font-style:italic;'>th</sup>] [of] MMMM, YYYY"
+execute:
+  echo: true
+  warning: false
+  message: false
+---
+
+# Overview
+
+::: notes
+Backward design for teaching - "What do you want the audience to take away?"
+
+-   This is where you go from surviving to thriving!
+
+-   Basics of reference management software
+
+    -   Understand the basics of reference management software
+    -   How to set up zotero for best usage
+    -   explore functionality of zotero
+        -   ResearchRabbit
+    -   Techniques I like think work with zotero
+:::
+
+::: nonincremental
+::: columns
+::: {.column width="50%"}
+-   Background
+
+-   Install & Setup
+:::
+
+::: {.column width="50%"}
+-   Suggested Usage
+
+-   Techniques for Success
+:::
+:::
+:::
+
+# Background
+
+::: nonincremental
+-   Reference management software
+-   Needs of the scholar
+-   Zotero and others
+:::
+
+## [Reference Management Software for Surviving to Thriving]{.small}
+
+### Background
+
+::: {layout="[[100], [50, 50]]"}
+-   What *is* RMS?
+    -   Database of bibliographic records
+    -   Creator of bibliographic citations
+    -   Capable of knowledge management
+        -   Collection structure
+        -   Tags
+        -   Notetaking
+
+[What influences choice?]{.fragment}
+
+::: small
+-   Campus educators (library, dept, etc.)
+-   Teachers and Colleagues
+-   But, Overall? Exposure!
+:::
+:::
+
+## Scholars Need the Lowest Bar to a RMS
+
+### Background
+
+::: {layout="[[70,30], [100]]"}
+![[User-defined important parameters for RMS. Nitsos et al., 2022, p. 105]{.small}](images/ref-manager-participate-ratings2.png){fig-align="left"}
+
+#### Scholar needs?
+
+1.  Easy
+2.  Free
+3.  Friendly
+:::
+
+## [Zotero is ***Free***, Open-source, ***Community-driven*** Software]{.small}
+
+### Background
+
+![[Participant's ratings of RMS. Cai et al., 2021, p. 68]{.small}](images/ref-manager-participate-ratings.png)
+
+::: fragment
+> Zotero \[zoh-TAIR-oh\] is a free, easy-to-use tool to help you collect, organize, cite, and share your research sources. - [Zotero's quick start guide](https://www.zotero.org/support/quick_start_guide)
+:::
+
+# Install & Setup
+
+::: nonincremental
+-   Download Zotero
+-   Optimize Zotero Storage
+-   Extend Zotero for Knowledge Management
+:::
+
+## Create a web account
+
+### Install & Setup
+
+::: {layout="[[40, 60], [100]]"}
+#### Benefits
+
+-   Free 300 mb storage
+    -   Limiting but there is a hack!
+-   Access library anywhere with internet
+-   Syncing and backup across all devices
+-   Join shared collections with Zotero groups
+
+[![](images/zotero-web-account.png){fig-align="right"}](https://www.zotero.org/user/register/)
+:::
+
+## Download Zotero for your OS
+
+### Install & Setup
+
+::: {layout="[[40, 60], [100]]"}
+#### Details
+
+-   Mac
+-   Windows
+-   Linux
+-   Chromebook
+-   Automatically updates
+
+[![](images/zotero-download.png){fig-align="right"}](https://www.zotero.org/download/)
+:::
+
+## Browser with Zotero connector
+
+### Install & Setup
+
+::: notes
+https://forums.zotero.org/discussion/76073/solved-zotero-connector-shortcut-conflict-with-firefox
+:::
+
+::: {layout="[[40, 60], [100]]"}
+#### Details
+
+::: small
+-   Firefox (Recommended)
+    -   [After install, navigate to `about:addons`]{.smaller}[`r knitr::asis_output("\U1F896")`]{.arrow} :gear: (upper right) [`r knitr::asis_output("\U1F896")`]{.arrow} `Manage Extention Shortcuts` [`r knitr::asis_output("\U1F896")`]{.arrow} `Activate toolbar button`
+    -   [`Ctrl/Cmd+Shift+S`]{.smaller}[`r knitr::asis_output("\U1F896")`]{.arrow} `Ctrl/Cmd+Shift+F`
+-   Chrome
+-   Edge
+-   Safari
+:::
+
+[![](images/zotero-connector.png){fig-align="right"}](https://www.zotero.org/download/)
+:::
+
+## Download a mobile app
+
+### Install & Setup
+
+```{r, echo=FALSE}
+library(knitr)
+```
+
+Gathering and managing on the go
+
+-   Portability
+-   `Share` [`r knitr::asis_output("\U1F896")`]{.arrow} `Zotero app`
+
+```{=html}
+<style>
+.container{
+    display: flex;
+}
+.col{
+    flex: 1;
+}
+</style>
+```
+::: container
+:::: col
+<svg width="500" height="200"> <a href="https://play.google.com/store/apps/details?id=com.mickstarify.zooforzotero"> <rect x="10" y="10" width="480" height="180" rx="10" ry="10" fill="blue" /> <text x="50%" y="50%" text-anchor="middle" fill="white" stroke="white" stroke-width="1">Android</text> </a> </svg>
+::::
+
+:::: col
+<svg width="500" height="200"> <a href="https://apps.apple.com/us/app/zotero/id1513554812"> <rect x="10" y="10" width="480" height="180" rx="10" ry="10" fill="red" /> <text x="50%" y="50%" text-anchor="middle" fill="white" stroke="white" stroke-width="1">IOS</text> </a> </svg>
+::::
+:::
+
+## [Downloading add-ons to extend Zotero's abilities!]{.small}
+
+### Install & Setup
+
+-   Download the `.xpi` file for the version you want
+    -   For Firefox, right-click and `Save Link As...`
+        -   OR! Set the `Boolean` for `browser.altClickSave` to true at `about:config`
+
+<br></br>
+
+::: nonincremental
+::: columns
+::: {.column width="50%"}
+-   [Zotfile](http://zotfile.com/)
+    -   [Latest Release](https://github.com/jlegewie/zotfile/releases/tag/v5.1.2)
+:::
+
+::: {.column width="50%"}
+-   [Better BibTeX](https://retorque.re/zotero-better-bibtex/)
+    -   [Latest Release](https://github.com/retorquere/zotero-better-bibtex/releases/latest)
+:::
+:::
+:::
+
+## Install the add-ons to complete the extenstion
+
+### Install & Setup
+
+::: columns
+::: {.column width="45%"}
+::: small
+1.  Open Zotero
+2.  Select `Tools` [`r knitr::asis_output("\U1F896")`]{.arrow} `Add-ons`
+3.  Select the gear (:gear:) in the top-right corner
+4.  Choose `Install Add-on From File…`
+5.  Choose `.xpi` files to install
+6.  Select `Open`
+7.  Select `Install`
+8.  Restart Zotero
+:::
+:::
+
+::: {.column width="55%"}
+![](images/addons.gif) [`alt-click` to zoom in]{.smaller}
+:::
+:::
+
+## [Configure Zotero for limitless, well-organized storage]{.small}
+
+### Install & Setup
+
+::: notes
+https://forums.zotero.org/discussion/83262/zotfile-move-web-snapshot-web-snapshot-and-cloud-storage https://github.com/jlegewie/zotfile/issues/566 https://ikashnitsky.phd/2019/zotero/ https://ikos-dighum.github.io/contents/betterbibtex/markdown_zotero.html
+:::
+
+::: small
+1.  Go to `Edit` [`r knitr::asis_output("\U1F896")`]{.arrow} `Preferences`
+    -   For MacOS, it is `Zotero` [`r knitr::asis_output("\U1F896")`]{.arrow} `Preferences`
+2.  Under `General` [`r knitr::asis_output("\U1F896")`]{.arrow} `File Handling`
+    -   Uncheck `Automatically rename attachemnet files using parent metadata`
+3.  Under `Advanced`
+    -   Under `Files and Folders` [`r knitr::asis_output("\U1F896")`]{.arrow} `Linked Attachment Base Directory`
+        -   Enter a filepath (e.g. absolute/filepath/to/zotero-library)
+    -   Under `Files and Folders` [`r knitr::asis_output("\U1F896")`]{.arrow} `Data Directory Location`
+        -   Leave as Zotero, or Enter a filepath (e.g. absolute/filepath/to/zotero-system)
+:::
+
+## [Zotfile is for automated attachment management]{.small} {.scrollable}
+
+### Install & Setup
+
+::: small
+1.  Go to `Tools` [`r knitr::asis_output("\U1F896")`]{.arrow} `ZotFile Preferences...`
+2.  Under `General settings`
+    -   Under `Source Folder for Attaching New Files`
+        -   Typically, set this to the `Downloads` directory
+    -   Under `Location of Files`
+        -   Select `Custom Location` and choose your `zotero-library`
+        -   Check `Use subfolder defined by`
+            -   Type `/{%y}_{%a}` for `Year_Author` (e.g. `2014_Zut`)
+3.  Under `Renaming Rules`
+    -   Under `Renaming Format`
+        -   Change `Format for all Item Types except Patents` to `{%y_}{%a_}{%t}`
+    -   Under `Additional Settings`
+        -   Only check the following:
+            -   `Change to lower case`
+            -   `Replace blanks`
+            -   `Truncate title after . or : or ?`
+            -   `Maximum length of title` (I suggest `80`)
+            -   `Maximum number of authors` (I suggest `1`)
+4.  Under `Advanced Settings` [`r knitr::asis_output("\U1F896")`]{.arrow} `Other Advanced Settings`
+    -   Set `Automatically rename new attachments` [`r knitr::asis_output("\U1F896")`]{.arrow} `Always rename`
+    -   Deselect `Ask user when attaching new files`
+    -   Deselect `Ask user to (batch) rename or move 3 or more attachments`
+    -   Select `Remove special characters (diacritics) from filename`
+    -   Select `Only work with the following filetypes`
+        -   Add `,html` to the list
+:::
+
+## [Backup all Zotero's metadata by syncing with the web]{.small}
+
+### Install & Setup
+
+1.  Select `Edit` [`r knitr::asis_output("\U1F896")`]{.arrow} `Preferences`
+2.  Under `Sync`
+    -   Under `Data syncing`
+        -   Enter username and password
+        -   Uncheck `sync full-text content`
+    -   Under `File syncing`
+        -   Uncheck `sync attachment files in my library using`
+        -   Uncheck `Sync attachment files in group libraries using Zotero storage`
+
+## [Sync attachments across computers with google drive]{.small} {.scrollable}
+
+### Install & Setup
+
+1.  Download and install [Drive for Desktop](https://www.google.com/drive/download/)
+2.  Skip everything
+3.  Go to your `zotero-library` directory
+4.  Right-click [`r knitr::asis_output("\U1F896")`]{.arrow} `Sync or Backup this folder`
+5.  Only check `Sync with Google Drive`
+    -   Should now be synced under `Computers` in google drive
+6.  In secondary computer,
+    i.  Download, install, and sync [Drive for Desktop](https://www.google.com/drive/download/)
+    ii. Allow `Offline access` to `zotero-library` for local storage
+    iii. Repeat the Install & Setup section until this point - BUT! Replace the `zotero-library` path with the Google Drive `zotero-library` path
+
+## Zotero can become a personal web archive
+
+### Install & Setup
+
+::: notes
+zotfile preferences for html
+
+Zotero can also function as a personal web archive. Storing the html files for the websites that are useful for reviewing.
+
+https://github.com/jlegewie/zotfile/issues/566
+
+However, websnap shots have an issue pending in the github repository. They do not automatically rename and move
+
+Simple manual fix until this issue is fixed in an update is to
+:::
+
+[Zotfile has trouble with html currently. A solution:](https://github.com/jlegewie/zotfile/issues/566)
+
+1.  Go to `My Library`
+2.  Organize by `Attachments` :paperclip:
+3.  Click on the webpage icon to the left of the title
+4.  Select all items (`Ctrl+A`)
+5.  Right click [`r knitr::asis_output("\U1F896")`]{.arrow} `Manage attachments` [`r knitr::asis_output("\U1F896")`]{.arrow} `Rename and Move`
+
+## [Better BibTeX supports markdown bibliographies]{.small}
+
+### Install & Setup
+
+1.  Select `Edit` [`r knitr::asis_output("\U1F896")`]{.arrow} `Preferences`
+2.  Under `Better BibTeX` [`r knitr::asis_output("\U1F896")`]{.arrow} `Open Better BibTeX preferences...`
+3.  Set `Citation key formula`
+    -   I suggest `auth.lower + year + shorttitle(3,3) + journal.lower.abbr`
+4.  When citing, add `@` before the citation key per item cited.
+
+## Migrating to Zotero is mostly painless
+
+### Install & Setup
+
+Follow the [instructions for popular tool](https://www.zotero.org/support/moving_to_zotero)
+
+<br></br>
+
+::: small
+> You can also import from other tools, such as Reference Manager, RefWorks, Papers, Google Scholar Library, ReadCube, etc., by exporting to a standardized reference format, such as RIS, BibTeX, or CSL JSON, and then importing into Zotero by clicking File → "Import..." and choose "A file".
+:::
+
+# Suggested Usage
+
+::: nonincremental
+-   Organizing in multiple ways
+-   Efficiently using Zotero
+-   AI extensions
+:::
+
+## [A simple, standard directory structure is easy to organize]{.small}
+
+### Suggested Usage
+
+::: columns
+::: column
+-   PARA
+    -   Projects
+        -   Short-term efforts
+    -   Areas
+        -   Long-term efforts
+    -   Resources
+        -   Topics of interest
+    -   Archives
+        -   Inactive items from the other categories
+:::
+
+::: column
+::: vscroll
+```{dot}
+//| echo: false
+//| fig-height: 6.5
+//| fig-width: 3
+digraph PARA { 
+  edge [arrowhead=none];
+  ranksep=0.5;
+  nodesep = 1;
+  splines = ortho;
+  rankdir = LR;
+
+  node [ shape="folder", width = 1.25, height = 0.75, fixedsize=true, style="filled" gradientangle="270", fillcolor="lightyellow:sandybrown", fontcolor="black"];
+  "My Library" [shape="box3d", style="filled" gradientangle="270", fillcolor="sandybrown:peru", fontcolor="black"];
+  Projects Areas Resources Archives;
+
+#  node [ shape="note", width = 1, height = 0.5, fixedsize=true, style="filled", fillcolor="white", fontcolor="black"];
+#item item2 paper;
+
+  node [ shape="point", width = 0, height = 0];
+  { rank = same; W0 W1 W2 W3}
+
+  W0 -> "My Library" [constraint=false];
+  W0 -> W1 -> W2 -> W3;        /* critical! */
+  
+  W0 -> Projects;
+
+  W1 -> Areas;
+
+  W2 -> Resources;
+
+  W3 -> Archives;
+
+    node [ shape="point", width = 0, height = 0 ];
+  { rank = same; W0 W3 W2 W1 }
+  
+}
+```
+:::
+:::
+:::
+
+## [A simple, standard directory structure is easy to organize]{.small}
+
+### Suggested Usage
+
+::: columns
+::: {.column .nonincremental}
+-   PARA
+    -   Projects
+        -   Short-term efforts
+    -   Areas
+        -   Long-term efforts
+    -   Resources
+        -   Topics of interest
+    -   Archives
+        -   Inactive items from the other categories
+:::
+
+::: column
+::: vscroll
+```{dot}
+//| echo: false
+//| fig-height: 16.5
+//| fig-width: 4.5
+digraph PARA { 
+  edge [arrowhead=none];
+  ranksep=0.5;
+  nodesep = 1;
+  splines = ortho;
+  rankdir = LR;
+
+  node [ shape="folder", width = 1.25, height = 0.75, fixedsize=true, style="filled" gradientangle="270", fillcolor="lightyellow:sandybrown", fontcolor="black"];
+  "My Library" [shape="box3d", style="filled" gradientangle="270", fillcolor="sandybrown:peru", fontcolor="black"];
+  Projects Areas Resources Archives QE Dissertation "Review\nPaper" Writing "Teaching" "Broader\nImpacts" "Dry\nLab" "Wet\nLab" Learning "Completed\nProjects" "Inactive\nAreas" "Irrelevant\nResources";
+
+#  node [ shape="note", width = 1, height = 0.5, fixedsize=true, style="filled", fillcolor="white", fontcolor="black"];
+#item item2 paper;
+
+  node [ shape="point", width = 0, height = 0];
+  { rank = same; W0 W1 W2 W3}
+
+  node [ shape="point", width = 0, height = 0];
+  { rank = same; P0 P1 P2 P3 P4 P5 P6 P7 P8 P9 P10 P11};
+
+  W0 -> "My Library" [constraint=false];
+  W0 -> W1 -> W2 -> W3;        /* critical! */
+  
+  W0 -> Projects;
+  Projects -> P2;
+  P0 -> P1 -> P2;
+  P0 -> "QE";
+  P1 -> "Dissertation";
+  P2 -> "Review\nPaper";
+  
+  W1 -> Areas;
+  Areas -> P4;
+  P3 -> P4 -> P5;
+  P3 -> "Writing";
+  P4 -> "Teaching";
+  P5 -> "Broader\nImpacts";
+  
+  W2 -> Resources;
+  Resources -> P7;
+  P6 -> P7 -> P8;
+  P6 -> "Dry\nLab";
+  P7 -> "Wet\nLab";
+  P8 -> "Learning";
+  
+  W3 -> Archives;
+  Archives -> P9;
+  P9 -> P10 -> P11;
+  P9 -> "Completed\nProjects";
+  P10 -> "Inactive\nAreas";
+  P11 -> "Irrelevant\nResources"
+  
+    node [ shape="point", width = 0, height = 0 ];
+  { rank = same; W4 W5 W6 W0 W3 W2 W1 }
+  
+}
+```
+:::
+:::
+:::
+
+## [Many avenues are available for finding you documents]{.small}
+
+### Suggested Usage
+
+To gather attachments:
+
+::: columns
+::: {.column width="60%"}
+-   Base Zotero
+    -   unpaywall
+    -   retraction watch
+-   Zotero Connector
+    -   Database query [`r knitr::asis_output("\U1F896")`]{.arrow} Click :file_folder:
+    -   Load article or webpage [`r knitr::asis_output("\U1F896")`]{.arrow} Click item icon
+:::
+
+::: {.column width="40%"}
+-   Addons
+    -   [SciHub](https://github.com/ethanwillis/zotero-scihub)
+    -   [This issue](https://github.com/ethanwillis/zotero-scihub/issues/96#issuecomment-1758310741) for [Action tags](https://github.com/windingwind/zotero-actions-tags/discussions/124) ([requires Z7](https://github.com/zotero/zotero/milestone/9))
+-   External
+    -   [archive.today](https://archive.ph/)
+:::
+:::
+
+## Including headers can increase organization
+
+### Suggested Usage
+
+::: columns
+::: column
+Including the `Notes` column for quick reference:
+
+-   Right-click column headers in any collection
+-   Check `Notes`
+:::
+
+::: column
+Quick example of note taking and importing into text editor:
+
+-   Open pdf in Zotero
+-   Create annotations (`Alt+1` & `Alt+3`)
+-   Right-click item and `Add Note from Annotations`
+-   Open text editor
+-   Import note
+:::
+:::
+
+## [Tags are incredible for organizing with visual aids!]{.small}
+
+### Suggested Usage
+
+Use tags to mark all read and unread items:
+
+1.  Add :o: to an item in the `Tags` panel.
+2.  In the lower left panel, right click the tag [`r knitr::asis_output("\U1F896")`]{.arrow} `Assign Color...`
+3.  Select a color and `Set color`
+4.  Select all items and drop into the tag
+
+For automatic tagging, install the [Actions and Tags](https://github.com/windingwind/zotero-actions-tags) addon
+
+## [For increased resolution create a ***Folksonomy***, a thesaurus of tags]{style="font-size: 0.70em;"}
+
+### Suggested Usage
+
+::: columns
+::: column
+Why?
+
+-   Individuals or groups will quickly find and re-find sources
+-   Metadata is shared in groups
+    -   Offers guidance to beginners
+:::
+
+::: column
+How?
+
+-   Think and create some keywords that capture the text contents
+-   Skim abstracts and papers for keywords
+-   Use bibliometrics or LLMs:
+    -   [`Create a folksonomy, or a thesaurus of tags, for [topics] studies.`]{.small}
+:::
+:::
+
+## [Auto-Curate your library through saved searches]{.small}
+
+### Suggested Usage
+
+::: notes
+A final organizational tool within Zotero is the saved searched. By creating curated searches new items will auto populate by well-defined rules set by the user. These saved searches allow a user to find the new items in both their Unfiled collection and their saved searches. All to allow the user more focused options when beginning their reading or writing tasks.
+:::
+
+-   Start an advanced search:
+    -   Click the :mag:
+    -   Click `Edit` [`r knitr::asis_output("\U1F896")`]{.arrow} `Advanced Search`
+    -   `Ctrl+Shift+F`
+-   Define an area of continued interest
+-   Using keywords in `All fields`, rapidly tag groups of items
+
+## Citing and bibliographies are simplified
+
+### Suggested Usage
+
+::: notes
+Paste the citations: `Ctrl+Shift+C` a Zotero item/s you have selected [`r knitr::asis_output("\U1F896")`]{.arrow} `Ctrl+v` in text editor
+:::
+
+::: small
+-   Google Docs for collabratory documents
+    -   Open google doc: Open a google doc in the google drive you would like to sync to your Zotero library.
+    -   Link account: Integrate your google account with Zotero by clicking `Z` in the toolbar.
+        -   Authenticate the Google account used to edit the document
+-   Microsoft Word for local documents
+    -   Open Word Doc: Open a word document...
+    -   Done?: There is now a Zotero tab in you document linked to your library!
+-   Libre Office for local documents
+    -   Open Libre Writer: Open a writer document...
+    -   Done?: There is now a Zotero toolbar in you document linked to your library!
+:::
+
+## [Extend your capabilities with addons and external tools]{.small}
+
+### Suggested Usage
+
+::: {.nonincremental .smaller}
+Additional addons:
+
+-   [Style](https://github.com/MuiseDestiny/zotero-style#readme)
+-   [References](https://github.com/MuiseDestiny/zotero-reference)
+-   [Scite](https://github.com/scitedotai/scite-zotero-plugin)
+-   [DOI Manager](https://github.com/bwiernik/zotero-shortdoi)
+-   [Better Notes](https://github.com/windingwind/zotero-better-notes#readme)
+-   [Translate](https://github.com/windingwind/zotero-pdf-translate#readme)
+
+Integrated external tools:
+
+-   [Research Rabbit](https://www.researchrabbit.ai/)
+-   [An AI Assistant?](https://forums.zotero.org/discussion/102320/the-possibility-of-integrating-ai-into-zotero-to-assist-reading/p1)
+
+External tools:
+
+-   semantic scholar
+-   connected papers
+-   elicit
+-   chat gpt
+:::
+
+# Summary
+
+## Acknowledgments
+
+### "I have always imagined that Paradise will be a kind of library."<br>Jorge Luis Borges
+
+::: nonincremental
+-   C. Titus Brown
+-   Pamela Reynolds
+-   Bryshal Moore
+-   Luiz Irber
+-   DIB Lab members
+-   DataLab members
+:::
