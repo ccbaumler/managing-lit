@@ -12,6 +12,9 @@ format:
     auto-animate-easing: ease-in-out
     auto-animate-unmatched: true
     auto-animate-duration: 0.8
+    menu:
+      side: right
+      width: half
 from: markdown+emoji
 author: 
   - name: Colton Baumler
@@ -56,7 +59,7 @@ Backward design for teaching - "What do you want the audience to take away?"
 ::: {.column width="50%"}
 -   Suggested Usage
 
--   Techniques for Success
+-   [Techniques for Success]{.op}
 :::
 :::
 :::
@@ -69,7 +72,7 @@ Backward design for teaching - "What do you want the audience to take away?"
 -   Zotero and others
 :::
 
-## [Reference Management Software for Surviving to Thriving]{.small}
+## [Reference Management Software Lead to Thriving Scholars]{.small}
 
 ### Background
 
@@ -77,7 +80,7 @@ Backward design for teaching - "What do you want the audience to take away?"
 -   What *is* RMS?
     -   Database of bibliographic records
     -   Creator of bibliographic citations
-    -   Capable of knowledge management
+    -   Document and knowledge management
         -   Collection structure
         -   Tags
         -   Notetaking
@@ -91,7 +94,7 @@ Backward design for teaching - "What do you want the audience to take away?"
 :::
 :::
 
-## Scholars Need the Lowest Bar to a RMS
+## [Scholars Want the Easiest Tool for Reference Management]{.small}
 
 ### Background
 
@@ -112,7 +115,7 @@ Backward design for teaching - "What do you want the audience to take away?"
 ![[Participant's ratings of RMS. Cai et al., 2021, p. 68]{.small}](images/ref-manager-participate-ratings.png)
 
 ::: fragment
-> Zotero \[zoh-TAIR-oh\] is a free, easy-to-use tool to help you collect, organize, cite, and share your research sources. - [Zotero's quick start guide](https://www.zotero.org/support/quick_start_guide)
+> Zotero \[zoh-TAIR-oh\] is a free, easy-to-use tool to help you collect, organize, cite, and share your research sources. - [Zotero's quick start guide](https://www.zotero.org/support/quick_start_guide){target="_blank"}
 :::
 
 # Install & Setup
@@ -136,7 +139,7 @@ Backward design for teaching - "What do you want the audience to take away?"
 -   Syncing and backup across all devices
 -   Join shared collections with Zotero groups
 
-[![](images/zotero-web-account.png){fig-align="right"}](https://www.zotero.org/user/register/)
+[![](images/zotero-web-account.png){fig-align="right"}](https://www.zotero.org/user/register/){target="_blank"}
 :::
 
 ## Download Zotero for your OS
@@ -152,7 +155,7 @@ Backward design for teaching - "What do you want the audience to take away?"
 -   Chromebook
 -   Automatically updates
 
-[![](images/zotero-download.png){fig-align="right"}](https://www.zotero.org/download/)
+[![](images/zotero-download.png){fig-align="right"}](https://www.zotero.org/download/){target="_blank"}
 :::
 
 ## Browser with Zotero connector
@@ -175,10 +178,10 @@ https://forums.zotero.org/discussion/76073/solved-zotero-connector-shortcut-conf
 -   Safari
 :::
 
-[![](images/zotero-connector.png){fig-align="right"}](https://www.zotero.org/download/)
+[![](images/zotero-connector.png){fig-align="right"}](https://www.zotero.org/download/){target="_blank"}
 :::
 
-## Download a mobile app
+## Optionally download a mobile app
 
 ### Install & Setup
 
@@ -186,10 +189,13 @@ https://forums.zotero.org/discussion/76073/solved-zotero-connector-shortcut-conf
 library(knitr)
 ```
 
-Gathering and managing on the go
-
--   Portability
--   `Share` [`r knitr::asis_output("\U1F896")`]{.arrow} `Zotero app`
+- Benefits
+  - Portability
+  - interoperability
+  - Gathering and managing on the go
+    -   `Share` [`r knitr::asis_output("\U1F896")`]{.arrow} `Zotero app`
+    
+[Click your operating system below:]{.fragment}
 
 ```{=html}
 <style>
@@ -203,11 +209,11 @@ Gathering and managing on the go
 ```
 ::: container
 :::: col
-<svg width="500" height="200"> <a href="https://play.google.com/store/apps/details?id=com.mickstarify.zooforzotero"> <rect x="10" y="10" width="480" height="180" rx="10" ry="10" fill="blue" /> <text x="50%" y="50%" text-anchor="middle" fill="white" stroke="white" stroke-width="1">Android</text> </a> </svg>
+<svg width="500" height="175"> <a href="https://play.google.com/store/apps/details?id=com.mickstarify.zooforzotero" target="_blank"> <rect x="10" y="10" width="480" height="160" rx="10" ry="10" fill="blue" /> <text x="50%" y="50%" text-anchor="middle" fill="white" stroke="white" stroke-width="1">Android</text> </a> </svg>
 ::::
 
 :::: col
-<svg width="500" height="200"> <a href="https://apps.apple.com/us/app/zotero/id1513554812"> <rect x="10" y="10" width="480" height="180" rx="10" ry="10" fill="red" /> <text x="50%" y="50%" text-anchor="middle" fill="white" stroke="white" stroke-width="1">IOS</text> </a> </svg>
+<svg width="500" height="175"> <a href="https://apps.apple.com/us/app/zotero/id1513554812" target="_blank"> <rect x="10" y="10" width="480" height="160" rx="10" ry="10" fill="red" /> <text x="50%" y="50%" text-anchor="middle" fill="white" stroke="white" stroke-width="1">IOS</text> </a> </svg>
 ::::
 :::
 
@@ -219,29 +225,38 @@ Gathering and managing on the go
     -   For Firefox, right-click and `Save Link As...`
         -   OR! Set the `Boolean` for `browser.altClickSave` to true at `about:config`
 
-<br></br>
-
 ::: nonincremental
-::: columns
-::: {.column width="50%"}
--   [Zotfile](http://zotfile.com/)
-    -   [Latest Release](https://github.com/jlegewie/zotfile/releases/tag/v5.1.2)
+:::: columns
+::::: {.column width="50%"}
+-   [Zotfile](http://zotfile.com/){target="_blank"}
+    -   [Latest Release](https://github.com/jlegewie/zotfile/releases/tag/v5.1.2){target="_blank"}
+
+:::::
+
+::::: {.column width="50%"}
+-   [Better BibTeX](https://retorque.re/zotero-better-bibtex/){target="_blank"}
+    -   [Latest Release](https://github.com/retorquere/zotero-better-bibtex/releases/latest){target="_blank"}
+
+:::::
+::::
 :::
 
-::: {.column width="50%"}
--   [Better BibTeX](https://retorque.re/zotero-better-bibtex/)
-    -   [Latest Release](https://github.com/retorquere/zotero-better-bibtex/releases/latest)
-:::
-:::
-:::
+[Take a few minutes to make sure everything is set up]{.fragment}
 
-## Install the add-ons to complete the extenstion
+```{r}
+#| echo: false
+countdown::countdown(minutes = 5, seconds = 0, warn_when = 120, 
+                     right = "0%", bottom = "10%",
+                     blink_colon = TRUE, id = "special_timer")
+```
+
+## Install add-ons to complete Zotero's extenstion
 
 ### Install & Setup
 
 ::: columns
-::: {.column width="45%"}
-::: small
+:::: {.column width="45%"}
+::::: small
 1.  Open Zotero
 2.  Select `Tools` [`r knitr::asis_output("\U1F896")`]{.arrow} `Add-ons`
 3.  Select the gear (:gear:) in the top-right corner
@@ -250,15 +265,15 @@ Gathering and managing on the go
 6.  Select `Open`
 7.  Select `Install`
 8.  Restart Zotero
-:::
-:::
+:::::
+::::
 
-::: {.column width="55%"}
+:::: {.column width="55%"}
 ![](images/addons.gif) [`alt-click` to zoom in]{.smaller}
-:::
+::::
 :::
 
-## [Configure Zotero for limitless, well-organized storage]{.small}
+## [Configure Zotero for well-organized storage]{.small}
 
 ### Install & Setup
 
@@ -278,9 +293,29 @@ https://forums.zotero.org/discussion/83262/zotfile-move-web-snapshot-web-snapsho
         -   Leave as Zotero, or Enter a filepath (e.g. absolute/filepath/to/zotero-system)
 :::
 
+## [Backup all Zotero's metadata by syncing with the web]{.small}
+
+### Install & Setup
+
+1.  Select `Edit` [`r knitr::asis_output("\U1F896")`]{.arrow} `Preferences`
+2.  Under `Sync`
+    -   Under `Data syncing`
+        -   Enter username and password
+        -   Uncheck `sync full-text content`
+    -   Under `File syncing`
+        -   Uncheck `sync attachment files in my library using`
+        -   Uncheck `Sync attachment files in group libraries using Zotero storage`
+
 ## [Zotfile is for automated attachment management]{.small} {.scrollable}
 
 ### Install & Setup
+
+```{r}
+#| echo: false
+countdown::countdown(minutes = 10, seconds = 0, warn_when = 120, 
+                     right = "0%", top = "10%",
+                     blink_colon = TRUE, id = "special_timer")
+```
 
 ::: small
 1.  Go to `Tools` [`r knitr::asis_output("\U1F896")`]{.arrow} `ZotFile Preferences...`
@@ -310,33 +345,20 @@ https://forums.zotero.org/discussion/83262/zotfile-move-web-snapshot-web-snapsho
         -   Add `,html` to the list
 :::
 
-## [Backup all Zotero's metadata by syncing with the web]{.small}
-
-### Install & Setup
-
-1.  Select `Edit` [`r knitr::asis_output("\U1F896")`]{.arrow} `Preferences`
-2.  Under `Sync`
-    -   Under `Data syncing`
-        -   Enter username and password
-        -   Uncheck `sync full-text content`
-    -   Under `File syncing`
-        -   Uncheck `sync attachment files in my library using`
-        -   Uncheck `Sync attachment files in group libraries using Zotero storage`
-
 ## [Sync attachments across computers with google drive]{.small} {.scrollable}
 
 ### Install & Setup
 
-1.  Download and install [Drive for Desktop](https://www.google.com/drive/download/)
+1.  Download and install [Drive for Desktop](https://www.google.com/drive/download/){target="_blank"}
 2.  Skip everything
 3.  Go to your `zotero-library` directory
 4.  Right-click [`r knitr::asis_output("\U1F896")`]{.arrow} `Sync or Backup this folder`
 5.  Only check `Sync with Google Drive`
     -   Should now be synced under `Computers` in google drive
 6.  In secondary computer,
-    i.  Download, install, and sync [Drive for Desktop](https://www.google.com/drive/download/)
+    i.  Download, install, and sync [Drive for Desktop](https://www.google.com/drive/download/){target="_blank"}
     ii. Allow `Offline access` to `zotero-library` for local storage
-    iii. Repeat the Install & Setup section until this point - BUT! Replace the `zotero-library` path with the Google Drive `zotero-library` path
+    iii. Repeat the Install & Setup section of this presentation to create the same Zotero system on this new computer - BUT! Replace the `zotero-library` path with the Google Drive `zotero-library` path (Slide: Zotfile is for automated attachment management, Step 2)
 
 ## Zotero can become a personal web archive
 
@@ -354,7 +376,7 @@ However, websnap shots have an issue pending in the github repository. They do n
 Simple manual fix until this issue is fixed in an update is to
 :::
 
-[Zotfile has trouble with html currently. A solution:](https://github.com/jlegewie/zotfile/issues/566)
+[Zotfile has trouble with html currently. A solution:](https://github.com/jlegewie/zotfile/issues/566){target="_blank"}
 
 1.  Go to `My Library`
 2.  Organize by `Attachments` :paperclip:
@@ -376,7 +398,7 @@ Simple manual fix until this issue is fixed in an update is to
 
 ### Install & Setup
 
-Follow the [instructions for popular tool](https://www.zotero.org/support/moving_to_zotero)
+Follow the [instructions for popular tool](https://www.zotero.org/support/moving_to_zotero){target="_blank"}
 
 <br></br>
 
@@ -553,12 +575,20 @@ To gather attachments:
 
 ::: {.column width="40%"}
 -   Addons
-    -   [SciHub](https://github.com/ethanwillis/zotero-scihub)
-    -   [This issue](https://github.com/ethanwillis/zotero-scihub/issues/96#issuecomment-1758310741) for [Action tags](https://github.com/windingwind/zotero-actions-tags/discussions/124) ([requires Z7](https://github.com/zotero/zotero/milestone/9))
--   External
-    -   [archive.today](https://archive.ph/)
+    -   [SciHub](https://github.com/ethanwillis/zotero-scihub){target="_blank"}
+    -   [This issue](https://github.com/ethanwillis/zotero-scihub/issues/96#issuecomment-1758310741){target="_blank"} for [Action tags](https://github.com/windingwind/zotero-actions-tags/discussions/124){target="_blank"} ([requires Z7](https://github.com/zotero/zotero/milestone/9){target="_blank"})
+-   Bypass paywalls
+    -   [archive.today](https://archive.ph/){target="_blank"}
+    -   [Medium articles](https://freedium.cfd/){target="_blank"}
 :::
 :::
+
+```{r}
+#| echo: false
+countdown::countdown(minutes = 10, seconds = 0, warn_when = 120, 
+                     right = "0%", top = "10%",
+                     blink_colon = TRUE, id = "special_timer")
+```
 
 ## Including headers can increase organization
 
@@ -594,7 +624,7 @@ Use tags to mark all read and unread items:
 3.  Select a color and `Set color`
 4.  Select all items and drop into the tag
 
-For automatic tagging, install the [Actions and Tags](https://github.com/windingwind/zotero-actions-tags) addon
+For automatic tagging, install the [Actions and Tags](https://github.com/windingwind/zotero-actions-tags){target="_blank"} addon
 
 ## [For increased resolution create a ***Folksonomy***, a thesaurus of tags]{style="font-size: 0.70em;"}
 
@@ -662,17 +692,17 @@ Paste the citations: `Ctrl+Shift+C` a Zotero item/s you have selected [`r knitr:
 ::: {.nonincremental .smaller}
 Additional addons:
 
--   [Style](https://github.com/MuiseDestiny/zotero-style#readme)
--   [References](https://github.com/MuiseDestiny/zotero-reference)
--   [Scite](https://github.com/scitedotai/scite-zotero-plugin)
--   [DOI Manager](https://github.com/bwiernik/zotero-shortdoi)
--   [Better Notes](https://github.com/windingwind/zotero-better-notes#readme)
--   [Translate](https://github.com/windingwind/zotero-pdf-translate#readme)
+-   [Style](https://github.com/MuiseDestiny/zotero-style#readme){target="_blank"}
+-   [References](https://github.com/MuiseDestiny/zotero-reference){target="_blank"}
+-   [Scite](https://github.com/scitedotai/scite-zotero-plugin){target="_blank"}
+-   [DOI Manager](https://github.com/bwiernik/zotero-shortdoi){target="_blank"}
+-   [Better Notes](https://github.com/windingwind/zotero-better-notes#readme){target="_blank"}
+-   [Translate](https://github.com/windingwind/zotero-pdf-translate#readme){target="_blank"}
 
 Integrated external tools:
 
--   [Research Rabbit](https://www.researchrabbit.ai/)
--   [An AI Assistant?](https://forums.zotero.org/discussion/102320/the-possibility-of-integrating-ai-into-zotero-to-assist-reading/p1)
+-   [Research Rabbit](https://www.researchrabbit.ai/){target="_blank"}
+-   [An AI Assistant?](https://forums.zotero.org/discussion/102320/the-possibility-of-integrating-ai-into-zotero-to-assist-reading/p1){target="_blank"}
 
 External tools:
 
