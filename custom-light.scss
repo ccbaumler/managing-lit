@@ -34,6 +34,16 @@ $code-block-border-color: #7E98A8 !default;
 
 
 /*-- scss:rules --*/
+.footer {
+  bottom: 10px !important;
+  //color: #58748f !important;
+}
+
+.reveal .progress {
+    top: 0 !important;
+    height: 2% !important;
+    background-color: #4C4E52//#273b50; 
+}
 
 .reveal .slide a {
   text-decoration: underline;
