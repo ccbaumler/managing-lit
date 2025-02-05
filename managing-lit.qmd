@@ -480,7 +480,7 @@ At [zotero.org/download](https://www.zotero.org/download/)
 
 :::
 
-## [Install plugins to complete Zotero's extenstion for this course]{.small} {data-menu-title="Installing plugins: Step 1"}
+## [Install plugins to complete Zotero's extenstion]{.small} {data-menu-title="Installing plugins: Step 1"}
 
 ### Install & Setup
 
@@ -507,7 +507,7 @@ At [zotero.org/download](https://www.zotero.org/download/)
 
 :::
 
-## [Install plugins to complete Zotero's extenstion for this course]{.small} {data-menu-title="Installing plugins: Step 2"}
+## [Install plugins to complete Zotero's extenstion]{.small} {data-menu-title="Installing plugins: Step 2"}
 
 ### Install & Setup
 
@@ -536,7 +536,7 @@ At [zotero.org/download](https://www.zotero.org/download/)
 
 :::
 
-## [Install plugins to complete Zotero's extenstion for this course]{.small} {data-menu-title="Installing plugins: Step 3"}
+## [Install plugins to complete Zotero's extenstion]{.small} {data-menu-title="Installing plugins: Step 3"}
 
 ### Install & Setup
 
@@ -567,7 +567,7 @@ At [zotero.org/download](https://www.zotero.org/download/)
 
 :::
 
-## [Install plugins to complete Zotero's extenstion for this course]{.small} {data-menu-title="Installing plugins: Step 4"}
+## [Install plugins to complete Zotero's extenstion]{.small} {data-menu-title="Installing plugins: Step 4"}
 
 ### Install & Setup
 
@@ -934,7 +934,7 @@ To gather attachments:
 
 ```{r}
 #| echo: false
-countdown::countdown(minutes = 10, seconds = 0, warn_when = 120, 
+countdown::countdown(minutes = 5, seconds = 0, warn_when = 120, 
                      right = "0%", top = "10%",
                      blink_colon = TRUE, id = "special_timer")
 ```
@@ -1012,6 +1012,13 @@ A final organizational tool within Zotero is the saved searched. By creating cur
     -   `Ctrl+Shift+F`
 -   Define an area of continued interest
 -   Using keywords in `All fields`, rapidly tag groups of items
+
+```{r}
+#| echo: false
+countdown::countdown(minutes = 5, seconds = 0, warn_when = 120, 
+                     right = "0%", top = "10%",
+                     blink_colon = TRUE, id = "special_timer")
+```
 
 ## Citing and bibliographies are simplified
 
