@@ -170,7 +170,7 @@ Backward design for teaching - "What do you want the audience to take away?"
 
 -   Access library anywhere with internet
 -   Syncing and backup across all devices
--   Join shared collections with Zotero groups
+-   Join shared collections with [Zotero groups](https://www.zotero.org/groups){target='_blank'}
 
 ::::
 
@@ -312,7 +312,7 @@ Backward design for teaching - "What do you want the audience to take away?"
 
 ### Install & Setup
 
-At [zotero.org](https://www.zotero.org/download/)
+At [zotero.org/download](https://www.zotero.org/download/)
 
 ::: {.columns}
 
@@ -352,7 +352,7 @@ At [zotero.org](https://www.zotero.org/download/)
 https://forums.zotero.org/discussion/76073/solved-zotero-connector-shortcut-conflict-with-firefox
 :::
 
-At [zotero.org](https://www.zotero.org/download/)
+At [zotero.org/download](https://www.zotero.org/download/)
 
 ::: {.columns}
 
@@ -598,7 +598,7 @@ At [zotero.org](https://www.zotero.org/download/)
 
 :::
 
-## [Install plugins to complete Zotero's extenstion for this course]{.small} {data-menu-title="Installing plugins: Step 5-8"}
+## [Install plugins to complete Zotero's extenstion]{.small} {data-menu-title="Installing plugins: Step 5-8"}
 
 ### Install & Setup
 
@@ -688,7 +688,7 @@ https://forums.zotero.org/discussion/83262/zotfile-move-web-snapshot-web-snapsho
 
 ::::: small
 
-3. <span class="hovertext" style="--hover-width:850px;"data-hover="    - Under `Data syncing`
+3. <span class="hovertext" style="--hover-width:850px;"data-hover="  - Under `Data syncing`
         - Uncheck `sync full-text content`
     - Under `File syncing`
         - Uncheck `sync attachment files in my Library using`
