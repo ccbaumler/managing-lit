@@ -939,7 +939,7 @@ countdown::countdown(minutes = 10, seconds = 0, warn_when = 120,
                      blink_colon = TRUE, id = "special_timer")
 ```
 
-## Including headers can increase organization
+## Including headers can increase note organization
 
 ### Suggested Usage
 
@@ -1059,6 +1059,74 @@ External tools:
 -   [elicit](https://elicit.com/)
 -   [ChatGPT](https://chatgpt.com/)
 :::
+
+# Techniques for Success
+
+::: {.nonincremental}
+
+- Achievable Goals
+- Boredom
+
+:::
+
+## Achievable goals lead to accomplishments
+
+### Techniques for Success
+
+::: {.columns}
+
+:::: {.column width="35%"}
+
+```{mermaid}
+%%| echo: false
+
+%%{init: {
+  "theme": "base",
+    'themeVariables': {
+      'lineColor': 'blue'
+    }
+}}%%
+
+flowchart TD;
+    A[End of the day] ==> B[List 3-6 tasks for tomorrow];
+    B ==> C[Order list by priority];
+    C ==> D["Pick up at the first item
+    the following day"];
+    D ==> E[Finish item on list?] ==> G[Move down list!];
+    D ==> F[Need a change?] ==> G;
+
+```
+
+::::
+
+:::: {.column width='65%'}
+
+#### Achievable goals?
+
+- Atomized tasks
+  - Focus a task until it is a single operation
+  - Doesn't feel comfortable? The task is still too large
+
+- Monotropism
+  - Be intentional with you tasks
+  - Reach a flow state in knowledge work
+
+::::
+
+:::
+
+## Boredom can lead to creative progress
+
+### Technqiues for Success
+
+#### ~~Ennui/Tedium~~ [Slow thought, Processing ideas]{.fragment}
+
+- Eliminate distractions
+  - Boredom or writing
+  - Sit in the arboretum
+- Set regular scheduled limits
+  - 400 words before editing
+  - 3-6 hours before task switching
 
 # Summary
 
