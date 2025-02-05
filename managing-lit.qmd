@@ -3,8 +3,8 @@ title: "Putting the Articles in Their Place!"
 subtitle: "Organize Scientific Literature with Reference Management Software"
 format: 
   revealjs:
-    theme: custom-dark.scss
-    css: timer.css
+    theme: custom-light.scss
+    css: [timer.css]
     preview-links: false
     incremental: true
     chalkboard: 
@@ -31,6 +31,10 @@ execute:
   warning: false
   message: false
 ---
+
+```{r, echo=FALSE}
+library(knitr)
+```
 
 # Overview
 
@@ -59,7 +63,7 @@ Backward design for teaching - "What do you want the audience to take away?"
 ::: {.column width="50%"}
 -   Suggested Usage
 
--   [Techniques for Success]{.op}
+-   Techniques for Success
 :::
 :::
 :::
@@ -126,39 +130,221 @@ Backward design for teaching - "What do you want the audience to take away?"
 -   Extend Zotero for Knowledge Management
 :::
 
-## Create a web account
+## Benefits of a web account {data-menu-title="Web account benefits: Storage"}
 
 ### Install & Setup
 
-::: {layout="[[40, 60], [100]]"}
+::: {.columns}
+
+:::: {.column}
+
 #### Benefits
 
--   Free 300 mb storage
-    -   Limiting but there is a hack!
+-   [Free 300 mb storage]{.hovertext data-hover="May store only metadata or use WebDav options as well" style="--hover-width: 250px;"}
+
+::::
+
+:::: {.column}
+
+[![](images/zotero-storage.png){.lightbox}]{fig-align="right"}
+
+::::
+
+:::
+
+## Benefits of a web account {data-menu-title="Web account benefits: interoperability"}
+
+### Install & Setup
+
+::: {.columns}
+
+:::: {.column}
+
+#### Benefits
+
+::::: {.nonincremental}
+
+-   [Free 300 mb storage]{.hovertext data-hover="May store only metadata or use WebDav options as well" style="--hover-width: 250px;"}
+
+:::::
+
 -   Access library anywhere with internet
 -   Syncing and backup across all devices
 -   Join shared collections with Zotero groups
 
-[![](images/zotero-web-account.png){fig-align="right"}](https://www.zotero.org/user/register/){target="_blank"}
+::::
+
+:::: {.column}
+
+[![](images/zotero-web-library.png){.lightbox}]{fig-align="right"}
+
+::::
+
 :::
 
-## Download Zotero for your OS
+## Create a web account {data-menu-title="Web account creation: Step 1"}
 
 ### Install & Setup
 
-::: {layout="[[40, 60], [100]]"}
+::: {.columns}
+
+:::: {.column}
+
+1. Go to [zotero.org](https://www.zotero.org/)
+
+::::
+
+:::: {.column}
+
+[![](images/zotero-home.png){.lightbox}]{fig-align="right"}
+
+::::
+
+:::
+
+## Create a web account {data-menu-title="Web account creation: Step 2"}
+
+### Install & Setup
+
+::: {.columns}
+
+:::: {.column}
+
+::::: {.nonincremental}
+
+1. [Go to [zotero.org](https://www.zotero.org/)]{.op}
+2. Click `Log In`
+
+:::::
+
+::::
+
+:::: {.column}
+
+[![](images/zotero-login-click.png){.lightbox}]{fig-align="right"}
+
+::::
+
+:::
+
+## Create a web account {data-menu-title="Web account creation: Step 3"}
+
+### Install & Setup
+
+::: {.columns}
+
+:::: {.column}
+
+::::: {.nonincremental}
+
+1. [Go to [zotero.org](https://www.zotero.org/)]{.op}
+2. [Click `Log In`]{.op}
+3. Click `Register for a free account`
+
+:::::
+
+::::
+
+:::: {.column}
+
+[![](images/zotero-login-register.png){.lightbox}]{fig-align="right"}
+
+::::
+
+:::
+
+## Create a web account {data-menu-title="Web account creation: Step 4"}
+
+### Install & Setup
+
+::: {.columns}
+
+:::: {.column}
+
+::::: {.nonincremental}
+
+1. [Go to [zotero.org](https://www.zotero.org/)]{.op}
+2. [Click `Log In`]{.op}
+3. [Click `Register for a free account`]{.op}
+4. Fill out the info
+
+:::::
+
+::::
+
+:::: {.column}
+
+[![](images/Zotero-Register.png){.lightbox}]{fig-align="right"}
+
+::::
+
+:::
+
+## Create a web account {data-menu-title="Web account creation: Step 5"}
+
+### Install & Setup
+
+::: {.columns}
+
+:::: {.column}
+
+::::: {.nonincremental}
+
+1. [Go to [zotero.org](https://www.zotero.org/)]{.op}
+2. [Click `Log In`]{.op}
+3. [Click `Register for a free account`]{.op}
+4. [Fill out the info]{.op}
+5. Click `Register`
+
+:::::
+
+::::
+
+:::: {.column}
+
+[![](images/Zotero-Register-click.png){.lightbox}]{fig-align="right"}
+
+::::
+
+:::
+
+## Download Zotero for your Operating System
+
+### Install & Setup
+
+At [zotero.org](https://www.zotero.org/download/)
+
+::: {.columns}
+
+:::: {.column width="40%"}
+
 #### Details
+
+::::: {.fragment}
+
+:::::: {.nonincremental}
 
 -   Mac
 -   Windows
 -   Linux
--   Chromebook
--   Automatically updates
+-   [Chromebook](https://www.zotero.org/support/kb/installing_on_a_chromebook)
+-   [Automatically updates]{.hovertext data-hover="May manually install over existing version without data loss" style="--hover-width: 250px;"}
 
-[![](images/zotero-download.png){fig-align="right"}](https://www.zotero.org/download/){target="_blank"}
+::::::
+
+:::::
+
+::::
+
+:::: {.column width="60%"}
+
+![](images/zotero-download-os.png){.lightbox}
+
+::::
+
 :::
 
-## Browser with Zotero connector
+## [Zotero Connector in browser simplifies storing articles]{.small}
 
 ### Install & Setup
 
@@ -166,28 +352,40 @@ Backward design for teaching - "What do you want the audience to take away?"
 https://forums.zotero.org/discussion/76073/solved-zotero-connector-shortcut-conflict-with-firefox
 :::
 
-::: {layout="[[40, 60], [100]]"}
+At [zotero.org](https://www.zotero.org/download/)
+
+::: {.columns}
+
+:::: {.column width="40%"}
+
 #### Details
 
-::: small
+::::: {.fragment}
+
+:::::: {.nonincremental}
+
 -   Firefox (Recommended)
-    -   [After install, navigate to `about:addons`]{.smaller}[`r knitr::asis_output("\U1F896")`]{.arrow} :gear: (upper right) [`r knitr::asis_output("\U1F896")`]{.arrow} `Manage Extention Shortcuts` [`r knitr::asis_output("\U1F896")`]{.arrow} `Activate toolbar button`
-    -   [`Ctrl/Cmd+Shift+S`]{.smaller}[`r knitr::asis_output("\U1F896")`]{.arrow} `Ctrl/Cmd+Shift+F`
 -   Chrome
 -   Edge
 -   Safari
+
+::::::
+
+:::::
+
+::::
+
+:::: {.column width="60%"}
+
+![](images/zotero-connect-browser.png){.lightbox}
+
+::::
+
 :::
 
-[![](images/zotero-connector.png){fig-align="right"}](https://www.zotero.org/download/){target="_blank"}
-:::
-
-## Optionally download a mobile app
+## Optionally download the app
 
 ### Install & Setup
-
-```{r, echo=FALSE}
-library(knitr)
-```
 
 - Benefits
   - Portability
@@ -199,25 +397,54 @@ library(knitr)
 
 ```{=html}
 <style>
-.container{
+.badge-container {
     display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
 }
-.col{
+
+.badge-container .badge {
     flex: 1;
+    max-width: 200px;
+    text-align: center;
+}
+
+.badge-container .badge img {
+    height: 100px;
+    width: auto;
+    border-radius: 8px;
+    transition: transform 0.2s ease;
+}
+
+.badge-container .badge img:hover {
+    transform: scale(1.25);
 }
 </style>
+
+<div class="badge-container">
+
+  <div class="badge">
+    <a href="https://play.google.com/store/apps/details?id=com.mickstarify.zooforzotero" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" 
+           alt="Google Play Button" 
+           style="height: 60px; width: auto; border-radius: 8px; transition: transform 0.2s ease;">
+    </a>
+  </div>
+  
+  <div class="badge">
+    <a href="https://apps.apple.com/us/app/zotero/id1513554812" target="_blank">
+      <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" 
+           alt="Download on the App Store"
+           style="height: 60px; width: auto; border-radius: 8px; transition: transform 0.2s ease;">
+    </a>
+  </div>
+
+</div>
 ```
-::: container
-:::: col
-<svg width="500" height="175"> <a href="https://play.google.com/store/apps/details?id=com.mickstarify.zooforzotero" target="_blank"> <rect x="10" y="10" width="480" height="160" rx="10" ry="10" fill="blue" /> <text x="50%" y="50%" text-anchor="middle" fill="white" stroke="white" stroke-width="1">Android</text> </a> </svg>
-::::
 
-:::: col
-<svg width="500" height="175"> <a href="https://apps.apple.com/us/app/zotero/id1513554812" target="_blank"> <rect x="10" y="10" width="480" height="160" rx="10" ry="10" fill="red" /> <text x="50%" y="50%" text-anchor="middle" fill="white" stroke="white" stroke-width="1">IOS</text> </a> </svg>
-::::
-:::
-
-## [Downloading add-ons to extend Zotero's abilities!]{.small}
+## [Downloading plugins to extend Zotero's abilities!]{.small}
 
 ### Install & Setup
 
@@ -225,180 +452,301 @@ library(knitr)
     -   For Firefox, right-click and `Save Link As...`
         -   OR! Set the `Boolean` for `browser.altClickSave` to true at `about:config`
 
-::: nonincremental
-:::: columns
+::: {.nonincremental}
+:::: {.columns}
 ::::: {.column width="50%"}
--   [Zotfile](http://zotfile.com/){target="_blank"}
-    -   [Latest Release](https://github.com/jlegewie/zotfile/releases/tag/v5.1.2){target="_blank"}
+
+:::::: {.incremental}
+
+-   [Actions and Tags](https://github.com/windingwind/zotero-actions-tags#actions-and-tags-for-zotero){target="_blank"}
+    -   [Latest Release](https://github.com/windingwind/zotero-actions-tags/releases/latest){target="_blank"}
+
+::::::
 
 :::::
 
 ::::: {.column width="50%"}
--   [Better BibTeX](https://retorque.re/zotero-better-bibtex/){target="_blank"}
-    -   [Latest Release](https://github.com/retorquere/zotero-better-bibtex/releases/latest){target="_blank"}
+
+:::::: {.incremental}
+
+-   [ZotMoov](https://github.com/wileyyugioh/zotmoov#zotmoov){target="_blank"}
+    -   [Latest Release](https://github.com/wileyyugioh/zotmoov/releases/latest){target="_blank"}
+
+::::::
 
 :::::
+
 ::::
+
 :::
 
-[Take a few minutes to make sure everything is set up]{.fragment}
-
-```{r}
-#| echo: false
-countdown::countdown(minutes = 5, seconds = 0, warn_when = 120, 
-                     right = "0%", bottom = "10%",
-                     blink_colon = TRUE, id = "special_timer")
-```
-
-## Install add-ons to complete Zotero's extenstion
+## [Install plugins to complete Zotero's extenstion for this course]{.small} {data-menu-title="Installing plugins: Step 1"}
 
 ### Install & Setup
 
-::: columns
+::: {.columns}
+
 :::: {.column width="45%"}
-::::: small
+
+::::: {.small}
+
+:::::: {.nonincremental}
+
 1.  Open Zotero
-2.  Select `Tools` [`r knitr::asis_output("\U1F896")`]{.arrow} `Add-ons`
+
+::::::
+
+:::::
+
+::::
+
+:::: {.column width="55%"}
+
+![](images/local-zotero.png){.lightbox}
+::::
+
+:::
+
+## [Install plugins to complete Zotero's extenstion for this course]{.small} {data-menu-title="Installing plugins: Step 2"}
+
+### Install & Setup
+
+::: {.columns}
+
+:::: {.column width="45%"}
+
+::::: {.small}
+
+:::::: {.nonincremental}
+
+1.  [Open Zotero]{.op}
+2.  Select `Tools` [`r knitr::asis_output("\U1F896")`]{.arrow} `Plugins`
+
+::::::
+
+:::::
+
+::::
+
+:::: {.column width="55%"}
+
+![](images/local-zotero-tools.png){.lightbox}
+
+::::
+
+:::
+
+## [Install plugins to complete Zotero's extenstion for this course]{.small} {data-menu-title="Installing plugins: Step 3"}
+
+### Install & Setup
+
+::: {.columns}
+
+:::: {.column width="45%"}
+
+::::: {.small}
+
+:::::: {.nonincremental}
+
+1.  [Open Zotero]{.op}
+2.  [Select `Tools` [`r knitr::asis_output("\U1F896")`]{.arrow} `Plugins`]{.op}
 3.  Select the gear (:gear:) in the top-right corner
-4.  Choose `Install Add-on From File…`
+
+
+::::::
+
+:::::
+
+::::
+
+:::: {.column width="55%"}
+
+![](images/plugins.png){.lightbox}
+
+::::
+
+:::
+
+## [Install plugins to complete Zotero's extenstion for this course]{.small} {data-menu-title="Installing plugins: Step 4"}
+
+### Install & Setup
+
+::: {.columns}
+
+:::: {.column width="45%"}
+
+::::: {.small}
+
+:::::: {.nonincremental}
+
+1.  [Open Zotero]{.op}
+2.  [Select `Tools` [`r knitr::asis_output("\U1F896")`]{.arrow} `Plugins`]{.op}
+3.  [Select the gear (:gear:) in the top-right corner]{.op}
+4.  Choose `Install Plugins From File…`
+
+::::::
+
+:::::
+
+::::
+
+:::: {.column width="55%"}
+
+![](images/plugins-install.png){.lightbox}
+
+::::
+
+:::
+
+## [Install plugins to complete Zotero's extenstion for this course]{.small} {data-menu-title="Installing plugins: Step 5-8"}
+
+### Install & Setup
+
+::: {.columns}
+
+:::: {.column width="45%"}
+
+::::: {.small}
+
+:::::: {.nonincremental}
+
+1.  [Open Zotero]{.op}
+2.  [Select `Tools` [`r knitr::asis_output("\U1F896")`]{.arrow} `Plugins`]{.op}
+3.  [Select the gear (:gear:) in the top-right corner]{.op}
+4.  [Choose `Install Plugins From File…`]{.op}
 5.  Choose `.xpi` files to install
 6.  Select `Open`
 7.  Select `Install`
 8.  Restart Zotero
+
+::::::
+
 :::::
+
 ::::
 
 :::: {.column width="55%"}
-![](images/addons.gif) [`alt-click` to zoom in]{.smaller}
+
+
+
 ::::
+
 :::
+
+[Take a few minutes to make sure everything is set up]{.fragment .absolute bottom=0}
+
+```{r}
+#| echo: false
+countdown::countdown(minutes = 5, seconds = 0, warn_when = 120, 
+                     right = "0%", top = "10%",
+                     blink_colon = TRUE, id = "special_timer")
+```
+
 
 ## [Configure Zotero for well-organized storage]{.small}
 
 ### Install & Setup
 
-::: notes
+::: {.notes}
+
 https://forums.zotero.org/discussion/83262/zotfile-move-web-snapshot-web-snapshot-and-cloud-storage https://github.com/jlegewie/zotfile/issues/566 https://ikashnitsky.phd/2019/zotero/ https://ikos-dighum.github.io/contents/betterbibtex/markdown_zotero.html
+
 :::
 
-::: small
+::: {.r-stack}
+
+:::: {style="margin: 0;"}
+
+::::: small
+
 1.  Go to `Edit` [`r knitr::asis_output("\U1F896")`]{.arrow} `Preferences`
-    -   For MacOS, it is `Zotero` [`r knitr::asis_output("\U1F896")`]{.arrow} `Preferences`
+    -   For MacOS, it is `Zotero` [`r knitr::asis_output("\U1F896")`]{.arrow} `Preferences` (?)
+
+    [![](images/settings.png){.lightbox}]{.fragment .absolute bottom=0 width=500}
+
 2.  Under `General` [`r knitr::asis_output("\U1F896")`]{.arrow} `File Handling`
-    -   Uncheck `Automatically rename attachemnet files using parent metadata`
-3.  Under `Advanced`
-    -   Under `Files and Folders` [`r knitr::asis_output("\U1F896")`]{.arrow} `Linked Attachment Base Directory`
-        -   Enter a filepath (e.g. absolute/filepath/to/zotero-library)
-    -   Under `Files and Folders` [`r knitr::asis_output("\U1F896")`]{.arrow} `Data Directory Location`
-        -   Leave as Zotero, or Enter a filepath (e.g. absolute/filepath/to/zotero-system)
+
+[![](images/settings-general.png){.lightbox}]{.fragment .absolute bottom=0 right=0 width=500}
+
+3. [Under `General` [`r knitr::asis_output("\U1F896")`]{.arrow} `File Renaming`](https://www.zotero.org/support/file_renaming){target="_blank"}
+
+[![](images/setting-renaming.png){.lightbox}]{.fragment .absolute bottom=0 right=0 width=500}
+
+:::::
+
+::::
+
 :::
 
-## [Backup all Zotero's metadata by syncing with the web]{.small}
+## [Backing up your storage to the web]{.small}
 
 ### Install & Setup
 
-1.  Select `Edit` [`r knitr::asis_output("\U1F896")`]{.arrow} `Preferences`
-2.  Under `Sync`
-    -   Under `Data syncing`
-        -   Enter username and password
-        -   Uncheck `sync full-text content`
-    -   Under `File syncing`
-        -   Uncheck `sync attachment files in my library using`
-        -   Uncheck `Sync attachment files in group libraries using Zotero storage`
+::: {.r-stack}
 
-## [Zotfile is for automated attachment management]{.small} {.scrollable}
+:::: {style="margin: 0;"}
+
+::::: small
+
+3. <span class="hovertext" style="--hover-width:850px;"data-hover="    - Under `Data syncing`
+        - Uncheck `sync full-text content`
+    - Under `File syncing`
+        - Uncheck `sync attachment files in my Library using`
+        - Uncheck `Sync attachment files in group libraries using Zotero storage`
+">
+    Under `Sync` [`r knitr::asis_output("\U1F896")`]{.arrow} `Data syncing` & `File syncing` link your web account
+</span>
+
+[![](images/setting-sync.png){.lightbox}]{.fragment .absolute bottom=0 left=0 width=500}
+
+4.  [Under `Advanced` [`r knitr::asis_output("\U1F896")`]{.arrow} `Files and Folders` set directories for data and storage]{.hovertext data-hover="Base directory will be your library of files. Enter a filepath (e.g. absolute/filepath/to/zotero-library). Data directory will be you Zotero system data. Leave as Zotero, or Enter a filepath (e.g. absolute/filepath/to/zotero-system)."}
+
+[![](images/settings-advanced.png){.lightbox}]{.fragment .absolute bottom=0 right=0 width=500}
+
+:::::
+
+::::
+
+:::
+
+## [ZotMoov allows automated attachment management!]{.small} {.scrollable}
 
 ### Install & Setup
 
 ```{r}
 #| echo: false
 countdown::countdown(minutes = 10, seconds = 0, warn_when = 120, 
-                     right = "0%", top = "10%",
+                     right = "0%", top = "5%",
                      blink_colon = TRUE, id = "special_timer")
 ```
 
-::: small
-1.  Go to `Tools` [`r knitr::asis_output("\U1F896")`]{.arrow} `ZotFile Preferences...`
-2.  Under `General settings`
-    -   Under `Source Folder for Attaching New Files`
-        -   Typically, set this to the `Downloads` directory
-    -   Under `Location of Files`
-        -   Select `Custom Location` and choose your `zotero-library`
-        -   Check `Use subfolder defined by`
-            -   Type `/{%y}_{%a}` for `Year_Author` (e.g. `2014_Zut`)
-3.  Under `Renaming Rules`
-    -   Under `Renaming Format`
-        -   Change `Format for all Item Types except Patents` to `{%y_}{%a_}{%t}`
-    -   Under `Additional Settings`
-        -   Only check the following:
-            -   `Change to lower case`
-            -   `Replace blanks`
-            -   `Truncate title after . or : or ?`
-            -   `Maximum length of title` (I suggest `80`)
-            -   `Maximum number of authors` (I suggest `1`)
-4.  Under `Advanced Settings` [`r knitr::asis_output("\U1F896")`]{.arrow} `Other Advanced Settings`
-    -   Set `Automatically rename new attachments` [`r knitr::asis_output("\U1F896")`]{.arrow} `Always rename`
-    -   Deselect `Ask user when attaching new files`
-    -   Deselect `Ask user to (batch) rename or move 3 or more attachments`
-    -   Select `Remove special characters (diacritics) from filename`
-    -   Select `Only work with the following filetypes`
-        -   Add `,html` to the list
+::: {.small}
+
+1. `Directory to Move/Copy Files To` should be ***your library directory***
+2. `File Behavior` leave as `Move`
+3. [Set up your directory structure:](https://github.com/wileyyugioh/zotmoov/blob/master/docs/WILDCARD_INFO.md#zotmoov-wildcard-formatting){target="_blank"}
+    - Nested [`r knitr::asis_output("\U1F896")`]{.arrow}\n`{/%y}{/%F}`<br>for `~/Year/First_Author`<br>(e.g. `~/2014/ZutJ`)
+    - Flattened [`r knitr::asis_output("\U1F896")`]{.arrow} `/{%y}_{%a}`<br>for `~/Year_AuthorLastName`<br>(e.g. `~/2014_Zut`)
+
+[![](images/settings-zotmoov.png){.lightbox}]{.fragment .absolute bottom=0 right=0 width=575}
+
 :::
-
-## [Sync attachments across computers with google drive]{.small} {.scrollable}
-
-### Install & Setup
-
-1.  Download and install [Drive for Desktop](https://www.google.com/drive/download/){target="_blank"}
-2.  Skip everything
-3.  Go to your `zotero-library` directory
-4.  Right-click [`r knitr::asis_output("\U1F896")`]{.arrow} `Sync or Backup this folder`
-5.  Only check `Sync with Google Drive`
-    -   Should now be synced under `Computers` in google drive
-6.  In secondary computer,
-    i.  Download, install, and sync [Drive for Desktop](https://www.google.com/drive/download/){target="_blank"}
-    ii. Allow `Offline access` to `zotero-library` for local storage
-    iii. Repeat the Install & Setup section of this presentation to create the same Zotero system on this new computer - BUT! Replace the `zotero-library` path with the Google Drive `zotero-library` path (Slide: Zotfile is for automated attachment management, Step 2)
 
 ## Zotero can become a personal web archive
 
 ### Install & Setup
 
-::: notes
-zotfile preferences for html
+1.  Under `General` [`r knitr::asis_output("\U1F896")`]{.arrow} `File Handling`
 
-Zotero can also function as a personal web archive. Storing the html files for the websites that are useful for reviewing.
+[[An Example](https://psyche.co/ideas/perplexed-embrace-it-confusion-is-a-symptom-of-learning){target="_blank"}]{.fragment}
 
-https://github.com/jlegewie/zotfile/issues/566
-
-However, websnap shots have an issue pending in the github repository. They do not automatically rename and move
-
-Simple manual fix until this issue is fixed in an update is to
-:::
-
-[Zotfile has trouble with html currently. A solution:](https://github.com/jlegewie/zotfile/issues/566){target="_blank"}
-
-1.  Go to `My Library`
-2.  Organize by `Attachments` :paperclip:
-3.  Click on the webpage icon to the left of the title
-4.  Select all items (`Ctrl+A`)
-5.  Right click [`r knitr::asis_output("\U1F896")`]{.arrow} `Manage attachments` [`r knitr::asis_output("\U1F896")`]{.arrow} `Rename and Move`
-
-## [Better BibTeX supports markdown bibliographies]{.small}
-
-### Install & Setup
-
-1.  Select `Edit` [`r knitr::asis_output("\U1F896")`]{.arrow} `Preferences`
-2.  Under `Better BibTeX` [`r knitr::asis_output("\U1F896")`]{.arrow} `Open Better BibTeX preferences...`
-3.  Set `Citation key formula`
-    -   I suggest `auth.lower + year + shorttitle(3,3) + journal.lower.abbr`
-4.  When citing, add `@` before the citation key per item cited.
+[![](images/settings-webarchive-highlight.png){.lightbox}]{.fragment .absolute bottom=0 right=0 width=575}
 
 ## Migrating to Zotero is mostly painless
 
 ### Install & Setup
 
-Follow the [instructions for popular tool](https://www.zotero.org/support/moving_to_zotero){target="_blank"}
+Follow the [instructions for any popular tool](https://www.zotero.org/support/moving_to_zotero){target="_blank"}
 
 <br></br>
 
@@ -569,17 +917,18 @@ To gather attachments:
     -   unpaywall
     -   retraction watch
 -   Zotero Connector
-    -   Database query [`r knitr::asis_output("\U1F896")`]{.arrow} Click :file_folder:
-    -   Load article or webpage [`r knitr::asis_output("\U1F896")`]{.arrow} Click item icon
+    -   [Database query](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=zone+of+proximal+development&btnG=&oq=zone+of+) [`r knitr::asis_output("\U1F896")`]{.arrow} Click :file_folder:
+    -   [Load article](https://www.nature.com/articles/s41597-024-03571-y) or webpage [`r knitr::asis_output("\U1F896")`]{.arrow} Left or Right click item icon
 :::
 
 ::: {.column width="40%"}
 -   Addons
-    -   [SciHub](https://github.com/ethanwillis/zotero-scihub){target="_blank"}
-    -   [This issue](https://github.com/ethanwillis/zotero-scihub/issues/96#issuecomment-1758310741){target="_blank"} for [Action tags](https://github.com/windingwind/zotero-actions-tags/discussions/124){target="_blank"} ([requires Z7](https://github.com/zotero/zotero/milestone/9){target="_blank"})
+    -   [SciHub](https://github.com/syt2/zotero-scipdf){target="_blank"}
+    -   [[This issue](https://github.com/ethanwillis/zotero-scihub/issues/96#issuecomment-1758310741){target="_blank"} for [Action tags](https://github.com/windingwind/zotero-actions-tags/discussions/124){target="_blank"}]{.small}
 -   Bypass paywalls
     -   [archive.today](https://archive.ph/){target="_blank"}
     -   [Medium articles](https://freedium.cfd/){target="_blank"}
+    -   [Scholar subreddit](https://www.reddit.com/r/Scholar/)
 :::
 :::
 
@@ -692,24 +1041,23 @@ Paste the citations: `Ctrl+Shift+C` a Zotero item/s you have selected [`r knitr:
 ::: {.nonincremental .smaller}
 Additional addons:
 
--   [Style](https://github.com/MuiseDestiny/zotero-style#readme){target="_blank"}
 -   [References](https://github.com/MuiseDestiny/zotero-reference){target="_blank"}
 -   [Scite](https://github.com/scitedotai/scite-zotero-plugin){target="_blank"}
 -   [DOI Manager](https://github.com/bwiernik/zotero-shortdoi){target="_blank"}
 -   [Better Notes](https://github.com/windingwind/zotero-better-notes#readme){target="_blank"}
 -   [Translate](https://github.com/windingwind/zotero-pdf-translate#readme){target="_blank"}
+-   [An AI Assistant?](https://github.com/lifan0127/ai-research-assistant?tab=readme-ov-file#aria-aria---your-ai-research-assistant){target="_blank"}
 
 Integrated external tools:
 
 -   [Research Rabbit](https://www.researchrabbit.ai/){target="_blank"}
--   [An AI Assistant?](https://forums.zotero.org/discussion/102320/the-possibility-of-integrating-ai-into-zotero-to-assist-reading/p1){target="_blank"}
 
 External tools:
 
--   semantic scholar
--   connected papers
--   elicit
--   chat gpt
+-   [semantic scholar](https://www.semanticscholar.org/me/research)
+-   [connected papers](https://www.connectedpapers.com/)
+-   [elicit](https://elicit.com/)
+-   [ChatGPT](https://chatgpt.com/)
 :::
 
 # Summary
@@ -718,11 +1066,84 @@ External tools:
 
 ### "I have always imagined that Paradise will be a kind of library."<br>Jorge Luis Borges
 
-::: nonincremental
+::: {.columns}
+
+:::: {.column}
+
+::::: {.nonincremental}
+
 -   C. Titus Brown
 -   Pamela Reynolds
 -   Bryshal Moore
 -   Luiz Irber
--   DIB Lab members
--   DataLab members
+-   The DataLab
+-   Professors For The Future
+-   NSF GRFP
+-   [IMSD]{.hovertext data-hover="For extended training and mentorship. Grant code is T32 GM135741 (NIH T32 IMSD Program)"}
+
+:::::
+
+::::
+
+:::: {.column}
+
+![](images/PFTF.png)
+
+![](images/IMSD logo 1 cropped.png)
+
+::::
+
 :::
+
+# Supplementary
+
+## [Sync attachments across computers with google drive]{.small} {.scrollable}
+
+### Install & Setup - Supp.
+
+1.  Download and install [Drive for Desktop](https://www.google.com/drive/download/){target="_blank"}
+2.  Skip everything
+3.  Go to your `zotero-library` directory
+4.  Right-click [`r knitr::asis_output("\U1F896")`]{.arrow} `Sync or Backup this folder`
+5.  Only check `Sync with Google Drive`
+    -   Should now be synced under `Computers` in google drive
+6.  In secondary computer,
+    i.  Download, install, and sync [Drive for Desktop](https://www.google.com/drive/download/){target="_blank"}
+    ii. Allow `Offline access` to `zotero-library` for local storage
+    iii. Repeat the Install & Setup section of this presentation to create the same Zotero system on this new computer - BUT! Replace the `zotero-library` path with the Google Drive `zotero-library` path (Slide: Zotfile is for automated attachment management, Step 2)
+
+## Fixing file locations quickly
+
+### Install & Setup - Supp.
+
+::: notes
+zotfile preferences for html
+
+Zotero can also function as a personal web archive. Storing the html files for the websites that are useful for reviewing.
+
+https://github.com/jlegewie/zotfile/issues/566
+
+However, websnap shots have an issue pending in the github repository. They do not automatically rename and move
+
+Simple manual fix until this issue is fixed in an update is to
+:::
+
+If your attachments are not all being moved by ZotMoov:
+
+1.  Go to `My Library`
+2.  Organize by `Attachments` :paperclip:
+3.  Click on the webpage icon to the left of the title
+4.  Select all items (`Ctrl+A`)
+5.  Right click [`r knitr::asis_output("\U1F896")`]{.arrow} `Manage attachments` [`r knitr::asis_output("\U1F896")`]{.arrow} `Rename and Move`
+
+## [Better BibTeX supports markdown bibliographies]{.small}
+
+### Install & Setup - Supp.
+
+[Better BibTeX Documentation](https://retorque.re/zotero-better-bibtex/citing/index.html)
+
+1.  Select `Edit` [`r knitr::asis_output("\U1F896")`]{.arrow} `Preferences`
+2.  Under `Better BibTeX` [`r knitr::asis_output("\U1F896")`]{.arrow} `Open Better BibTeX preferences...`
+3.  Set `Citation key formula`
+    -   I suggest `auth.lower + year + shorttitle(3,3) + journal.lower.abbr`
+4.  When citing, add `@` before the citation key per item cited.
